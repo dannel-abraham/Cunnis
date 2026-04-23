@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_back"
+            app:title="@string/mating_record_title"
+            app:titleTextColor="?attr/colorOnSurface" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_large">
+
+            <!-- Doe Info -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilDoe"
+                style="@style/Widget.Cunnis.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mating_doe">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtDoe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Buck Selection -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilBuck"
+                style="@style/Widget.Cunnis.TextInputLayout.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mating_select_buck"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <AutoCompleteTextView
+                    android:id="@+id/actBuck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Mating Date -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilMatingDate"
+                style="@style/Widget.Cunnis.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mating_date_label"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtMatingDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Is Effective Checkbox -->
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/chkEffective"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mating_effective_label"
+                android:layout_marginTop="@dimen/margin_medium" />
+
+            <!-- Result Dropdown -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilResult"
+                style="@style/Widget.Cunnis.TextInputLayout.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mating_result"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <AutoCompleteTextView
+                    android:id="@+id/actResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Attempt Number -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilAttemptNumber"
+                style="@style/Widget.Cunnis.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mating_attempt_label"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtAttemptNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:text="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Observations -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilObservations"
+                style="@style/Widget.Cunnis.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mating_observations_label"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtObservations"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:minLines="3" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Save Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSave"
+                style="@style/Widget.Cunnis.Button.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="@string/common_save"
+                android:layout_marginTop="@dimen/margin_xlarge" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

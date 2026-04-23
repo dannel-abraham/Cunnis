@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cunnis</string>
+    <string name="app_version">v0.1.0.0</string>
+    <string name="app_author">Dannel Alvarez Nieto</string>
+    <string name="app_dedication">старому</string>
+    <string name="app_telegram">\@alvareznieto.dannel</string>
+    <string name="app_email">alvareznieto.dannel@gmail.com</string>
+
+    <string name="nav_home">Главная</string>
+    <string name="nav_cages">Клетки</string>
+    <string name="nav_rabbits">Кролики</string>
+    <string name="nav_stats">Статистика</string>
+    <string name="nav_settings">Настройки</string>
+    <string name="nav_alerts">Оповещения</string>
+    <string name="nav_expenses">Расходы</string>
+
+    <string name="common_save">Сохранить</string>
+    <string name="common_cancel">Отмена</string>
+    <string name="common_delete">Удалить</string>
+    <string name="common_edit">Изменить</string>
+    <string name="common_add">Добавить</string>
+    <string name="common_confirm">Подтвердить</string>
+    <string name="common_back">Назад</string>
+    <string name="common_yes">Да</string>
+    <string name="common_no">Нет</string>
+    <string name="common_search">Поиск</string>
+    <string name="common_filter">Фильтр</string>
+    <string name="common_no_data">Нет данных</string>
+    <string name="common_loading">Загрузка…</string>
+    <string name="common_error">Произошла ошибка</string>
+    <string name="common_success">Операция успешна</string>
+    <string name="common_close">Закрыть</string>
+    <string name="common_ok">ОК</string>
+    <string name="common_na">Н/Д</string>
+    <string name="common_from">От</string>
+    <string name="common_to">До</string>
+    <string name="common_date">Дата</string>
+    <string name="common_notes">Заметки</string>
+    <string name="common_total">Итого</string>
+    <string name="common_all">Все</string>
+
+    <string name="profile_title">Добро пожаловать в Cunnis</string>
+    <string name="profile_subtitle">Настройте профиль фермы</string>
+    <string name="profile_username">Имя пользователя</string>
+    <string name="profile_farm_name">Название фермы</string>
+    <string name="profile_email">Электронная почта</string>
+    <string name="profile_phone">Телефон</string>
+    <string name="profile_address">Адрес</string>
+    <string name="profile_username_required">Имя пользователя обязательно</string>
+    <string name="profile_welcome">Добро пожаловать, %s!</string>
+
+    <string name="cage_title">Клетки</string>
+    <string name="cage_add">Добавить клетку</string>
+    <string name="cage_edit">Изменить клетку</string>
+    <string name="cage_number">Номер клетки</string>
+    <string name="cage_number_hint">Введите номер клетки</string>
+    <string name="cage_notes">Заметки</string>
+    <string name="cage_rabbit_count">%d кролик(ов)</string>
+    <string name="cage_empty">В этой клетке нет кроликов</string>
+    <string name="cage_deleted">Клетка удалена</string>
+    <string name="cage_delete_confirm">Удалить эту клетку? Кролики останутся без клетки.</string>
+    <string name="cage_detail">Клетка №%d</string>
+
+    <string name="rabbit_title">Кролики</string>
+    <string name="rabbit_add">Добавить кролика</string>
+    <string name="rabbit_edit">Изменить кролика</string>
+    <string name="rabbit_name">Имя</string>
+    <string name="rabbit_name_required">Имя обязательно</string>
+    <string name="rabbit_identifier">ID</string>
+    <string name="rabbit_gender">Пол</string>
+    <string name="rabbit_male">Самец</string>
+    <string name="rabbit_female">Самка</string>
+    <string name="rabbit_breed">Порода</string>
+    <string name="rabbit_breed_hint">Введите или выберите породу</string>
+    <string name="rabbit_birth_date">Дата рождения</string>
+    <string name="rabbit_born_in_farm">Рождён на ферме</string>
+    <string name="rabbit_sire">Отец</string>
+    <string name="rabbit_dam">Мать</string>
+    <string name="rabbit_cage">Клетка</string>
+    <string name="rabbit_no_cage">Без клетки</string>
+    <string name="rabbit_photo">Фото</string>
+    <string name="rabbit_take_photo">Сделать фото</string>
+    <string name="rabbit_select_photo">Выбрать из галереи</string>
+    <string name="rabbit_age">Возраст</string>
+    <string name="rabbit_weight">Вес</string>
+    <string name="rabbit_status">Статус</string>
+    <string name="rabbit_status_active">Активен</string>
+    <string name="rabbit_status_dead">Погиб</string>
+    <string name="rabbit_status_sold">Продан</string>
+    <string name="rabbit_status_slaughtered">Забит</string>
+    <string name="rabbit_notes">Заметки</string>
+    <string name="rabbit_deleted">Кролик удалён</string>
+    <string name="rabbit_delete_confirm">Удалить этого кролика? Вся история будет потеряна.</string>
+    <string name="rabbit_detail">Подробности о кролике</string>
+    <string name="rabbit_days_old">%d дней</string>
+    <string name="rabbit_months_old">%d месяцев</string>
+    <string name="rabbit_unknown_age">Возраст неизвестен</string>
+    <string name="rabbit_profile">Профиль</string>
+
+    <string name="cemental_title">Производитель</string>
+    <string name="cemental_no_set">Производитель не назначен</string>
+    <string name="cemental_set">Назначить производителем</string>
+    <string name="cemental_info">Производитель — это главный самец-производитель вашей фермы.</string>
+    <string name="cemental_confirm_change">Назначить нового производителя? Текущий будет удалён.</string>
+
+    <string name="health_title">История здоровья</string>
+    <string name="health_add">Добавить запись</string>
+    <string name="health_type">Тип</string>
+    <string name="health_checkup">Осмотр</string>
+    <string name="health_vaccination">Вакцинация</string>
+    <string name="health_deworming">Дегельминтизация</string>
+    <string name="health_illness">Болезнь</string>
+    <string name="health_injury">Травма</string>
+    <string name="health_surgery">Операция</string>
+    <string name="health_veterinarian">Ветеринар</string>
+    <string name="health_medication">Лекарство</string>
+    <string name="health_cost">Стоимость</string>
+    <string name="health_next_due">Следующий срок</string>
+
+    <string name="weight_title">История веса</string>
+    <string name="weight_add">Записать вес</string>
+    <string name="weight_value">Вес (фунт)</string>
+    <string name="weight_hint">Введите вес в фунтах</string>
+    <string name="weight_avg">Средний</string>
+    <string name="weight_max">Макс.</string>
+    <string name="weight_current">Текущий</string>
+    <string name="weight_lbs">%.1f фунт</string>
+
+    <string name="repro_title">Репродуктивная история</string>
+    <string name="estrus_title">Записи течки</string>
+    <string name="estrus_add">Записать течку</string>
+    <string name="estrus_date">Дата течки</string>
+    <string name="estrus_observations">Наблюдения</string>
+    <string name="estrus_receptive">Рецептивна</string>
+    <string name="estrus_next_predicted">Следующая (оценка): %s</string>
+    <string name="mating_title">Записи случки</string>
+    <string name="mating_add">Записать случку</string>
+    <string name="mating_date">Дата случки</string>
+    <string name="mating_buck">Самец</string>
+    <string name="mating_doe">Самка</string>
+    <string name="mating_effective">Успешная</string>
+    <string name="mating_result">Результат</string>
+    <string name="mating_pending">Ожидает</string>
+    <string name="mating_successful">Успешно</string>
+    <string name="mating_unsuccessful">Неудачно</string>
+    <string name="parturition_title">Записи окрола</string>
+    <string name="parturition_add">Записать окрол</string>
+    <string name="parturition_date">Дата окрола</string>
+    <string name="parturition_due_date">Ожидаемая дата</string>
+    <string name="parturition_total_born">Всего рождено</string>
+    <string name="parturition_born_alive">Живых</string>
+    <string name="parturition_born_dead">Мёртвых</string>
+    <string name="parturition_weaned">Отняты от матери</string>
+    <string name="parturition_est_weaning">Ожид. отъём</string>
+    <string name="parturition_complications">Осложнения</string>
+
+    <string name="movement_title">История перемещений</string>
+    <string name="movement_add">Записать перемещение</string>
+    <string name="movement_from">Откуда</string>
+    <string name="movement_to">Куда</string>
+    <string name="movement_reason">Причина</string>
+    <string name="movement_weaning">Отъём</string>
+    <string name="movement_breeding">Разведение</string>
+    <string name="movement_reorganization">Реорганизация</string>
+
+    <string name="stats_title">Статистика</string>
+    <string name="stats_by_rabbit">По кролику</string>
+    <string name="stats_by_cage">По клетке</string>
+    <string name="stats_general">Общая</string>
+    <string name="stats_total_rabbits">Всего кроликов</string>
+    <string name="stats_active_rabbits">Активные кролики</string>
+    <string name="stats_total_cages">Всего клеток</string>
+    <string name="stats_total_born">Всего рождено</string>
+    <string name="stats_mortality_rate">Уровень смертности</string>
+    <string name="stats_avg_litter_size">Средний размер помёта</string>
+    <string name="stats_total_expenses">Всего расходов</string>
+    <string name="stats_weight_chart">Динамика веса</string>
+    <string name="stats_reproduction_chart">Обзор размножения</string>
+
+    <string name="expense_title">Расходы</string>
+    <string name="expense_add">Добавить расход</string>
+    <string name="expense_category">Категория</string>
+    <string name="expense_feed">Корм</string>
+    <string name="expense_medicine">Лекарства</string>
+    <string name="expense_equipment">Оборудование</string>
+    <string name="expense_veterinary">Ветеринар</string>
+    <string name="expense_transport">Транспорт</string>
+    <string name="expense_amount">Сумма ($)</string>
+    <string name="expense_description">Описание</string>
+    <string name="expense_deleted">Расход удалён</string>
+
+    <string name="feeding_title">Записи кормления</string>
+    <string name="feeding_add">Добавить запись</string>
+    <string name="feeding_type">Тип корма</string>
+    <string name="feeding_quantity">Количество (фунт)</string>
+    <string name="feeding_cage">Клетка</string>
+
+    <string name="alert_title">Оповещения</string>
+    <string name="alert_config_title">Настройка оповещений</string>
+    <string name="alert_estrus">Прогноз течки</string>
+    <string name="alert_gestation">Дата окрола</string>
+    <string name="alert_weaning">Дата отъёма</string>
+    <string name="alert_reproductive_age">Репродуктивный возраст</string>
+    <string name="alert_weight_check">Ежемесячный контроль веса</string>
+    <string name="alert_vaccination">Срок вакцинации</string>
+    <string name="alert_advance_days">Заблаговременность (дни)</string>
+    <string name="alert_advance_hours">Заблаговременность (часы)</string>
+    <string name="alert_enabled">Включено</string>
+    <string name="alert_disabled">Отключено</string>
+
+    <string name="export_title">Экспорт / Импорт</string>
+    <string name="export_db">Экспорт базы данных</string>
+    <string name="import_db">Импорт базы данных</string>
+    <string name="export_success">База данных экспортирована</string>
+    <string name="import_success">База данных импортирована</string>
+    <string name="import_confirm">Импорт базы данных ЗАМЕНИТ все текущие данные. Продолжить?</string>
+    <string name="import_error">Ошибка импорта базы данных</string>
+    <string name="export_format">Резервная копия Cunnis (.cbckp)</string>
+
+    <string name="settings_title">Настройки</string>
+    <string name="settings_profile">Профиль фермы</string>
+    <string name="settings_theme">Тема</string>
+    <string name="settings_language">Язык</string>
+    <string name="settings_notifications">Уведомления</string>
+    <string name="settings_alert_config">Настройка оповещений</string>
+    <string name="settings_export">Экспорт данных</string>
+    <string name="settings_import">Импорт данных</string>
+    <string name="settings_about">О приложении</string>
+    <string name="settings_theme_light">Светлая</string>
+    <string name="settings_theme_dark">Тёмная</string>
+    <string name="settings_theme_system">Системная</string>
+
+    <string name="home_welcome">Добро пожаловать на вашу ферму</string>
+    <string name="home_total">Всего</string>
+    <string name="home_males">Самцы</string>
+    <string name="home_females">Самки</string>
+    <string name="home_cages">Клетки</string>
+    <string name="home_recent_alerts">Последние оповещения</string>
+    <string name="home_quick_actions">Быстрые действия</string>
+    <string name="home_add_rabbit">Добавить кролика</string>
+    <string name="home_add_cage">Добавить клетку</string>
+    <string name="home_record_mating">Записать случку</string>
+    <string name="home_add_expense">Добавить расход</string>
+
+    <string name="exit_title">Записать выбытие</string>
+    <string name="exit_reason">Причина выбытия</string>
+    <string name="exit_date">Дата выбытия</string>
+    <string name="exit_notes">Заметки</string>
+    <string name="exit_natural_death">Естественная смерть</string>
+    <string name="exit_disease">Болезнь</string>
+    <string name="exit_sold">Продан</string>
+    <string name="exit_slaughtered">Забит</string>
+    <string name="exit_accident">Несчастный случай</string>
+
+    <string name="about_title">О Cunnis</string>
+    <string name="about_description">Профессиональный комплекс управления кролиководческой фермой</string>
+    <string name="about_version">Версия: %s</string>
+    <string name="about_author">Автор: %s</string>
+    <string name="about_contact">Контакты</string>
+
+    <string name="drawer_open">Открыть меню навигации</string>
+    <string name="drawer_close">Закрыть меню навигации</string>
+    <string name="drawer_header_subtitle">Менеджер кролиководческой фермы</string>
+
+    <string name="error_required_field">Это поле обязательно</string>
+    <string name="error_invalid_data">Неверные данные</string>
+    <string name="error_camera">Нет доступа к камере</string>
+    <string name="error_storage">Доступ к хранилищу запрещён</string>
+    <string name="error_generic">Что-то пошло не так</string>
+
+    <!-- Estrus (missing) -->
+    <string name="estrus_not_receptive">Не рецептивна</string>
+    <string name="estrus_empty">Нет записей о течке</string>
+    <string name="estrus_delete_confirm">Удалить эту запись о течке?</string>
+    <string name="estrus_deleted">Запись о течке удалена</string>
+    <string name="estrus_saved">Запись о течке сохранена</string>
+
+    <!-- Mating (missing) -->
+    <string name="mating_empty">Нет записей о случке</string>
+    <string name="mating_due_date">Ожидаемая дата: %s</string>
+
+    <!-- Parturition (missing) -->
+    <string name="parturition_empty">Нет записей об окроле</string>
+
+    <!-- Enhanced Stats (missing) -->
+    <string name="stats_weight_evolution">Динамика веса</string>
+    <string name="stats_reproduction_overview">Обзор размножения</string>
+    <string name="stats_expense_breakdown">Структура расходов</string>
+    <string name="stats_breed_distribution">Распределение пород</string>
+    <string name="stats_month">Месяц</string>
+    <string name="stats_alive">Живорождённых</string>
+    <string name="stats_dead">Мёртворождённых</string>
+    <string name="stats_no_chart_data">Нет данных для графика</string>
+    <string name="stats_rabbit_title">Статистика кролика</string>
+    <string name="stats_age">Возраст</string>
+    <string name="stats_matings">Случки</string>
+    <string name="stats_parturitions">Окролы</string>
+
+    <!-- Feeding (missing) -->
+    <string name="feeding_list_title">Записи кормления</string>
+    <string name="feeding_list_empty">Нет записей о кормлении</string>
+    <string name="feeding_this_month">Этот месяц</string>
+    <string name="feeding_total_quantity">Общее количество</string>
+    <string name="feeding_lbs_month">%.1f фунт за этот месяц</string>
+    <string name="feeding_filter_all">Все</string>
+
+    <!-- Home (missing) -->
+    <string name="home_select_doe">Выбрать самку</string>
+    <string name="home_no_females">Нет доступных активных самок</string>
+    <string name="home_mating_for">Записать случку для: %s</string>
+
+    <!-- Health Event Activity (missing) -->
+    <string name="health_event_title">Добавить событие здоровья</string>
+    <string name="health_event_edit_title">Изменить событие здоровья</string>
+    <string name="health_event_type_required">Тип события обязателен</string>
+    <string name="health_event_saved">Событие здоровья сохранено</string>
+    <string name="health_title_label">Название</string>
+    <string name="health_description_label">Описание</string>
+    <string name="health_veterinarian_label">Ветеринар</string>
+    <string name="health_medication_label">Лекарство</string>
+    <string name="health_cost_label">Стоимость ($)</string>
+    <string name="health_next_due_label">Следующий срок</string>
+
+    <!-- Mating Record Activity (missing) -->
+    <string name="mating_record_title">Записать случку</string>
+    <string name="mating_select_buck">Выбрать самца</string>
+    <string name="mating_date_label">Дата случки</string>
+    <string name="mating_effective_label">Успешная</string>
+    <string name="mating_attempt_label">Номер попытки</string>
+    <string name="mating_observations_label">Наблюдения</string>
+    <string name="mating_saved">Запись о случке сохранена</string>
+
+    <!-- Parturition Activity (missing) -->
+    <string name="parturition_record_title">Записать окрол</string>
+    <string name="parturition_select_buck">Выбрать самца</string>
+    <string name="parturition_estimated_due">Ожидаемая дата окрола</string>
+    <string name="parturition_total_born_hint">Всего рождено</string>
+    <string name="parturition_born_alive_hint">Живых</string>
+    <string name="parturition_born_dead_hint">Мёртвых</string>
+    <string name="parturition_weaned_hint">Отняты от матери</string>
+    <string name="parturition_complications_label">Осложнения</string>
+    <string name="parturition_complications_notes_label">Заметки об осложнениях</string>
+    <string name="parturition_saved">Запись об окроле сохранена</string>
+
+    <!-- Weight Record Activity (missing) -->
+    <string name="weight_record_title">Записать вес</string>
+    <string name="weight_latest_label">Последний вес</string>
+    <string name="weight_avg_label">Средний вес</string>
+    <string name="weight_required">Вес обязателен</string>
+    <string name="weight_saved">Запись о весе сохранена</string>
+
+    <!-- Expense Activity (missing) -->
+    <string name="add_expense_title">Добавить расход</string>
+    <string name="expense_description_required">Описание обязательно</string>
+    <string name="expense_amount_required">Сумма обязательна</string>
+    <string name="expense_saved">Расход сохранён</string>
+    <string name="expense_select_rabbit">Выбрать кролика (необязательно)</string>
+    <string name="expense_select_cage">Выбрать клетку (необязательно)</string>
+
+    <!-- Feeding Activity (missing) -->
+    <string name="add_feeding_title">Записать кормление</string>
+    <string name="feeding_feed_type_required">Тип корма обязателен</string>
+    <string name="feeding_quantity_required">Количество обязательно</string>
+    <string name="feeding_select_cage">Выбрать клетку</string>
+    <string name="feeding_saved">Запись о кормлении сохранена</string>
+
+    <!-- Export/Import Activity (missing) -->
+    <string name="export_import_title">Экспорт / Импорт</string>
+    <string name="export_database_desc">Создать резервную копию всей базы данных</string>
+    <string name="import_database_desc">Восстановить из предыдущего файла резервной копии</string>
+    <string name="export_db_stats">Статистика базы данных</string>
+    <string name="export_total_records">%d записей</string>
+    <string name="export_in_progress">Экспорт базы данных…</string>
+    <string name="import_in_progress">Импорт базы данных…</string>
+
+    <!-- Notifications (missing) -->
+    <string name="notification_channel_alerts">Оповещения фермы</string>
+    <string name="notification_channel_alerts_desc">Оповещения для вашей кролиководческой фермы</string>
+    <string name="alert_notification_title">Оповещение фермы</string>
+
+    <!-- Settings (missing) -->
+    <string name="settings_profile_section">Профиль фермы</string>
+    <string name="settings_edit_profile">Изменить профиль</string>
+    <string name="settings_appearance">Внешний вид</string>
+    <string name="settings_language_section">Язык</string>
+    <string name="settings_lang_en">English</string>
+    <string name="settings_lang_es">Español</string>
+    <string name="settings_lang_ru">Русский</string>
+    <string name="settings_notifications_section">Уведомления</string>
+    <string name="settings_data_section">Управление данными</string>
+    <string name="settings_about_section">О приложении</string>
+    <string name="settings_dedication">%s</string>
+    <string name="settings_theme_applied">Тема изменена</string>
+    <string name="settings_language_applied">Язык изменён (может потребоваться перезапуск)</string>
+
+    <!-- Cage Detail (missing) -->
+    <string name="cage_detail_title">Клетка №%d</string>
+    <string name="cage_detail_rabbits">Кролики в клетке</string>
+    <string name="cage_detail_add_rabbit">Добавить кролика</string>
+    <string name="cage_detail_no_rabbits">В этой клетке нет кроликов</string>
+
+    <!-- Cemental (missing) -->
+    <string name="cemental_current">Текущий производитель</string>
+    <string name="cemental_set_new">Назначить нового производителя</string>
+    <string name="cemental_remove">Удалить производителя</string>
+    <string name="cemental_stats">Статистика производителя</string>
+    <string name="cemental_total_matings">Всего случек</string>
+    <string name="cemental_successful_matings">Успешных случек</string>
+    <string name="cemental_total_offspring">Всего потомства</string>
+    <string name="cemental_recent_matings">Последние случки</string>
+    <string name="cemental_select_male">Выбрать кролика-самца</string>
+    <string name="cemental_removed">Производитель удалён</string>
+    <string name="cemental_no_male">Нет доступных активных самцов</string>
+
+    <!-- Expenses List (missing) -->
+    <string name="expenses_empty">Нет записей о расходах</string>
+    <string name="expenses_filter_all">Все</string>
+    <string name="expenses_total_label">Итого расходов</string>
+
+    <!-- Alerts (missing) -->
+    <string name="alerts_empty">Нет настроек оповещений</string>
+    <string name="alerts_check_now">Проверить оповещения</string>
+    <string name="alerts_no_pending">Нет ожидающих оповещений</string>
+    <string name="alerts_pending_count">%d ожидающих оповещений</string>
+    <string name="alerts_estrus_prediction_desc">Уведомляет, когда самка приближается к следующему циклу течки</string>
+    <string name="alerts_gestation_due_desc">Уведомляет, когда период беременности приближается к дате окрола</string>
+    <string name="alerts_weaning_desc">Уведомляет, когда крольчата готовы к отъёму</string>
+    <string name="alerts_reproductive_age_desc">Уведомляет, когда кролики достигают репродуктивной зрелости</string>
+    <string name="alerts_weight_check_desc">Ежемесячное напоминание о записи веса кроликов</string>
+    <string name="alerts_vaccination_due_desc">Уведомляет о наступлении срока вакцинации</string>
+
+    <!-- Exit Dialog -->
+    <string name="exit_confirm">Записать выбытие? Кролик будет помечен как неактивный.</string>
+    <string name="exit_recorded">Выбытие успешно записано</string>
+    <string name="exit_select_reason">Выбрать причину</string>
+
+    <!-- Transfer Dialog -->
+    <string name="transfer_current_cage">Текущая клетка</string>
+    <string name="transfer_target_cage">Целевая клетка</string>
+    <string name="transfer_select_cage">Выбрать целевую клетку</string>
+    <string name="transfer_reason">Причина</string>
+    <string name="transfer_select_reason">Выбрать причину</string>
+    <string name="transfer_confirm">Переместить этого кролика в клетку №%d?</string>
+    <string name="transfer_success">Кролик успешно перемещён</string>
+    <string name="transfer_no_cages">Нет других доступных клеток</string>
+
+    <!-- Parent Tracking -->
+    <string name="rabbit_sire_placeholder">Выбрать отца</string>
+    <string name="rabbit_dam_placeholder">Выбрать мать</string>
+    <string name="rabbit_parent_format">%s (%s)</string>
+
+    <!-- Weight History Chart -->
+    <string name="filter_show">Показать фильтры</string>
+    <string name="filter_hide">Скрыть фильтры</string>
+    <string name="filter_all">Все</string>
+    <string name="filter_gender">Пол</string>
+    <string name="filter_breed">Порода</string>
+    <string name="filter_cage">Клетка</string>
+    <string name="filter_no_results">Нет кроликов, соответствующих текущим фильтрам</string>
+    <string name="weight_chart_title">Динамика веса</string>
+    <string name="weight_stats_latest">Последний</string>
+    <string name="weight_stats_avg">Средний</string>
+    <string name="weight_stats_max">Максимальный</string>
+
+    <!-- Home Pending Alerts -->
+    <string name="home_pending_alerts">Ожидающие оповещения</string>
+    <string name="home_view_all_alerts">Показать все</string>
+    <string name="home_no_pending_alerts">Нет ожидающих оповещений</string>
+
+    <!-- Alert Check Progress -->
+    <string name="alert_checking">Проверка оповещений…</string>
+    <string name="alert_notifications_sent">%d уведомлений отправлено</string>
+    <string name="alert_check_complete">Проверка оповещений завершена</string>
+
+    <!-- Weight Photo -->
+    <string name="weight_photo">Добавить фото</string>
+    <string name="weight_take_photo">Сделать фото</string>
+    <string name="weight_select_gallery">Выбрать из галереи</string>
+
+    <!-- Import Restart -->
+    <string name="import_restart_required">База данных импортирована. Перезапустите приложение для применения изменений.</string>
+    <string name="import_restart">Перезапустить</string>
+
+    <!-- Rabbit Birth Date -->
+    <string name="rabbit_birth_date_hint">Выбрать дату</string>
+
+    <!-- Sale Price & Parent Labels -->
+    <string name="exit_sale_price">Цена продажи ($)</string>
+    <string name="rabbit_sire_label">Отец (производитель)</string>
+    <string name="rabbit_dam_label">Мать (самка)</string>
+    <string name="rabbit_unknown_parent">Неизвестно</string>
+
+    <!-- Category display names -->
+    <string name="category_other">Прочее</string>
+    <string name="category_feed">Корм</string>
+    <string name="category_medicine">Лекарства</string>
+    <string name="category_equipment">Оборудование</string>
+    <string name="category_veterinary">Ветеринар</string>
+    <string name="category_transport">Транспорт</string>
+
+    <!-- Chart labels -->
+    <string name="chart_weight_lb">Вес (фунт)</string>
+    <string name="chart_average_weight">Среднее</string>
+    <string name="chart_avg_weight_lb">Средний вес (фунт)</string>
+
+    <!-- Alert notification messages -->
+    <string name="alert_estrus_msg">Ожидается течка у %1$s (ожидаемая дата: %2$s)</string>
+    <string name="alert_gestation_msg">Ожидается окрол у %1$s (ожидаемая дата: %2$s)</string>
+    <string name="alert_weaning_msg">Крольчата готовы к отъёму от %1$s (с: %2$s)</string>
+    <string name="alert_weight_msg">Пора ежемесячного взвешивания %1$s (последний: %2$s)</string>
+    <string name="alert_reproductive_msg">%1$s достиг(ла) репродуктивной зрелости</string>
+    <string name="alert_vaccination_msg">Срок вакцинации для %1$s — %2$s</string>
+    <string name="alert_unknown_rabbit">Неизвестный кролик</string>
+    <string name="alert_unknown_doe">Неизвестная самка</string>
+
+    <!-- Misc -->
+    <string name="cage_format">Клетка №%d</string>
+    <string name="weight_photo_note">Вес: </string>
+    <string name="alert_type_unknown">Неизвестно</string>
+</resources>

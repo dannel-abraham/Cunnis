@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.Cunnis.Card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_small"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    app:cardElevation="@dimen/card_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_medium"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.Cunnis.TitleMedium" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipReceptive"
+                style="@style/Widget.Cunnis.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginTop="@dimen/margin_small" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtObservations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                style="@style/TextAppearance.Cunnis.BodySmall"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="@dimen/icon_size_medium"
+            android:layout_height="@dimen/icon_size_medium"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_delete"
+            android:contentDescription="@string/common_delete"
+            app:tint="@color/cunnis_error" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

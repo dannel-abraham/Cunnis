@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_back"
+            app:title="@string/health_event_title"
+            app:titleTextColor="?attr/colorOnSurface" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_large">
+
+            <!-- Event Type -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilEventType"
+                style="@style/Widget.Cunnis.TextInputLayout.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/health_type">
+
+                <AutoCompleteTextView
+                    android:id="@+id/actEventType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Title -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilTitle"
+                style="@style/Widget.Cunnis.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/health_title_label"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Description -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilDescription"
+                style="@style/Widget.Cunnis.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/health_description_label"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:minLines="3"
+                    android:gravity="top" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Event Date -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilEventDate"
+                style="@style/Widget.Cunnis.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/common_date"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtEventDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:focusable="false"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Veterinarian -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilVeterinarian"
+                style="@style/Widget.Cunnis.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/health_veterinarian_label"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtVeterinarian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Medication -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilMedication"
+                style="@style/Widget.Cunnis.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/health_medication_label"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtMedication"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Cost -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilCost"
+                style="@style/Widget.Cunnis.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/health_cost_label"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtCost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Next Due Date -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilNextDueDate"
+                style="@style/Widget.Cunnis.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/health_next_due_label"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtNextDueDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:focusable="false"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Notes -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilNotes"
+                style="@style/Widget.Cunnis.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/common_notes"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtNotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:minLines="2"
+                    android:gravity="top" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Save Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSave"
+                style="@style/Widget.Cunnis.Button.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="@string/common_save"
+                android:layout_marginTop="@dimen/margin_xlarge" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.Cunnis.HeadlineLarge" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="TextAppearance.Cunnis.HeadlineMedium" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="TextAppearance.Cunnis.HeadlineSmall" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="TextAppearance.Cunnis.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="TextAppearance.Cunnis.TitleMedium" parent="TextAppearance.Material3.TitleMedium">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="TextAppearance.Cunnis.TitleSmall" parent="TextAppearance.Material3.TitleSmall">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="TextAppearance.Cunnis.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="TextAppearance.Cunnis.BodyMedium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="TextAppearance.Cunnis.BodySmall" parent="TextAppearance.Material3.BodySmall">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="TextAppearance.Cunnis.LabelLarge" parent="TextAppearance.Material3.LabelLarge">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="TextAppearance.Cunnis.LabelMedium" parent="TextAppearance.Material3.LabelMedium">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="TextAppearance.Cunnis.LabelSmall" parent="TextAppearance.Material3.LabelSmall">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+</resources>

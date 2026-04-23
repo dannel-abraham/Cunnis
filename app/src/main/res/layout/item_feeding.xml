@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.Cunnis.Card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_small">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_small">
+
+        <!-- Top row: date and cage -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txtFeedType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TextAppearance.Cunnis.BodyLarge"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TextAppearance.Cunnis.BodySmall"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:layout_marginTop="2dp" />
+
+            </LinearLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.Cunnis.TitleMedium"
+                android:textColor="@color/cunnis_control_normal" />
+
+        </LinearLayout>
+
+        <!-- Bottom row: cage chip and notes -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/margin_small">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipCage"
+                style="@style/Widget.Cunnis.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:textSize="11sp"
+                android:clickable="false" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtNotes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/margin_small"
+                style="@style/TextAppearance.Cunnis.BodySmall"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

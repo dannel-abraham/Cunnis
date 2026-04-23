@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Summary card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardSummary"
+            style="@style/Widget.Cunnis.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:visibility="gone"
+            app:cardCornerRadius="@dimen/card_corner_radius"
+            app:cardElevation="@dimen/card_elevation">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_medium"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtSummaryTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.Cunnis.HeadlineSmall"
+                        android:textColor="?attr/colorPrimary" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/parturition_total_born"
+                        style="@style/TextAppearance.Cunnis.LabelSmall"
+                        android:textColor="?attr/colorOnSurfaceVariant" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtSummaryAlive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.Cunnis.HeadlineSmall"
+                        android:textColor="@color/cunnis_success" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/parturition_born_alive"
+                        style="@style/TextAppearance.Cunnis.LabelSmall"
+                        android:textColor="?attr/colorOnSurfaceVariant" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtSummaryDead"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.Cunnis.HeadlineSmall"
+                        android:textColor="@color/cunnis_error" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/parturition_born_dead"
+                        style="@style/TextAppearance.Cunnis.LabelSmall"
+                        android:textColor="?attr/colorOnSurfaceVariant" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtSummaryWeaned"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.Cunnis.HeadlineSmall"
+                        android:textColor="?attr/colorSecondary" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/parturition_weaned"
+                        style="@style/TextAppearance.Cunnis.LabelSmall"
+                        android:textColor="?attr/colorOnSurfaceVariant" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Empty state -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/parturition_empty"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            style="@style/TextAppearance.Cunnis.BodyLarge"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:layout_marginTop="100dp" />
+
+        <!-- RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingHorizontal="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_xlarge" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAdd"
+        style="@style/Widget.Cunnis.FloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_input_add"
+        android:contentDescription="@string/parturition_add" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

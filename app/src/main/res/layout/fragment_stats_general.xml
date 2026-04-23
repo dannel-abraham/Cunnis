@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_medium">
+
+        <!-- Overview Cards - Horizontal Scroll -->
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/stats_total_rabbits"
+            style="@style/TextAppearance.Cunnis.TitleMedium"
+            android:layout_marginBottom="@dimen/margin_small" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Total Rabbits -->
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Widget.Cunnis.Card.Stat"
+                    android:layout_width="@dimen/overview_card_width"
+                    android:layout_height="@dimen/stat_card_height"
+                    android:layout_marginEnd="8dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center" android:padding="8dp">
+                        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_rabbit" app:tint="@color/cunnis_control_normal" android:layout_marginBottom="4dp" />
+                        <com.google.android.material.textview.MaterialTextView android:id="@+id/txtTotalRabbits" style="@style/TextAppearance.Cunnis.HeadlineLarge" android:textColor="@color/cunnis_control_normal" />
+                        <com.google.android.material.textview.MaterialTextView android:text="@string/stats_active_rabbits" style="@style/TextAppearance.Cunnis.BodySmall" android:textColor="?attr/colorOnSurfaceVariant" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Males -->
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Widget.Cunnis.Card.Stat"
+                    android:layout_width="@dimen/overview_card_width"
+                    android:layout_height="@dimen/stat_card_height"
+                    android:layout_marginEnd="8dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center" android:padding="8dp">
+                        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_male" app:tint="@color/cunnis_male" android:layout_marginBottom="4dp" />
+                        <com.google.android.material.textview.MaterialTextView android:id="@+id/txtMales" style="@style/TextAppearance.Cunnis.HeadlineLarge" android:textColor="@color/cunnis_male" />
+                        <com.google.android.material.textview.MaterialTextView android:text="@string/rabbit_male" style="@style/TextAppearance.Cunnis.BodySmall" android:textColor="?attr/colorOnSurfaceVariant" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Females -->
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Widget.Cunnis.Card.Stat"
+                    android:layout_width="@dimen/overview_card_width"
+                    android:layout_height="@dimen/stat_card_height"
+                    android:layout_marginEnd="8dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center" android:padding="8dp">
+                        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_female" app:tint="@color/cunnis_female" android:layout_marginBottom="4dp" />
+                        <com.google.android.material.textview.MaterialTextView android:id="@+id/txtFemales" style="@style/TextAppearance.Cunnis.HeadlineLarge" android:textColor="@color/cunnis_female" />
+                        <com.google.android.material.textview.MaterialTextView android:text="@string/rabbit_female" style="@style/TextAppearance.Cunnis.BodySmall" android:textColor="?attr/colorOnSurfaceVariant" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Total Cages -->
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Widget.Cunnis.Card.Stat"
+                    android:layout_width="@dimen/overview_card_width"
+                    android:layout_height="@dimen/stat_card_height"
+                    android:layout_marginEnd="8dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center" android:padding="8dp">
+                        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_cage" app:tint="@color/cunnis_accent" android:layout_marginBottom="4dp" />
+                        <com.google.android.material.textview.MaterialTextView android:id="@+id/txtTotalCages" style="@style/TextAppearance.Cunnis.HeadlineLarge" android:textColor="@color/cunnis_accent" />
+                        <com.google.android.material.textview.MaterialTextView android:text="@string/stats_total_cages" style="@style/TextAppearance.Cunnis.BodySmall" android:textColor="?attr/colorOnSurfaceVariant" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Total Born Alive -->
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Widget.Cunnis.Card.Stat"
+                    android:layout_width="@dimen/overview_card_width"
+                    android:layout_height="@dimen/stat_card_height"
+                    android:layout_marginEnd="8dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center" android:padding="8dp">
+                        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_born" app:tint="@color/cunnis_success" android:layout_marginBottom="4dp" />
+                        <com.google.android.material.textview.MaterialTextView android:id="@+id/txtTotalBorn" style="@style/TextAppearance.Cunnis.HeadlineLarge" android:textColor="@color/cunnis_success" />
+                        <com.google.android.material.textview.MaterialTextView android:text="@string/stats_alive" style="@style/TextAppearance.Cunnis.BodySmall" android:textColor="?attr/colorOnSurfaceVariant" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Mortality Rate -->
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Widget.Cunnis.Card.Stat"
+                    android:layout_width="@dimen/overview_card_width"
+                    android:layout_height="@dimen/stat_card_height"
+                    android:layout_marginEnd="8dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center" android:padding="8dp">
+                        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_warning" app:tint="@color/cunnis_error" android:layout_marginBottom="4dp" />
+                        <com.google.android.material.textview.MaterialTextView android:id="@+id/txtMortality" style="@style/TextAppearance.Cunnis.HeadlineLarge" android:textColor="@color/cunnis_error" />
+                        <com.google.android.material.textview.MaterialTextView android:text="@string/stats_mortality_rate" style="@style/TextAppearance.Cunnis.BodySmall" android:textColor="?attr/colorOnSurfaceVariant" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Total Expenses -->
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/Widget.Cunnis.Card.Stat"
+                    android:layout_width="@dimen/overview_card_width"
+                    android:layout_height="@dimen/stat_card_height">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center" android:padding="8dp">
+                        <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_expense" app:tint="@color/cunnis_accent" android:layout_marginBottom="4dp" />
+                        <com.google.android.material.textview.MaterialTextView android:id="@+id/txtTotalExpenses" style="@style/TextAppearance.Cunnis.HeadlineLarge" android:textColor="@color/cunnis_accent" />
+                        <com.google.android.material.textview.MaterialTextView android:text="@string/stats_total_expenses" style="@style/TextAppearance.Cunnis.BodySmall" android:textColor="?attr/colorOnSurfaceVariant" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Weight Evolution Chart -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.Cunnis.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_medium">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stats_weight_evolution"
+                    style="@style/TextAppearance.Cunnis.TitleMedium"
+                    android:textColor="@color/cunnis_control_normal"
+                    android:layout_marginBottom="8dp" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/chartWeightEvolution"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txtNoWeightData"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:text="@string/stats_no_chart_data"
+                    style="@style/TextAppearance.Cunnis.BodyMedium"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:gravity="center"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Reproduction Overview Chart -->
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.Cunnis.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_medium">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stats_reproduction_overview"
+                    style="@style/TextAppearance.Cunnis.TitleMedium"
+                    android:textColor="@color/cunnis_female"
+                    android:layout_marginBottom="8dp" />
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/chartReproduction"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txtNoReproductionData"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:text="@string/stats_no_chart_data"
+                    style="@style/TextAppearance.Cunnis.BodyMedium"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:gravity="center"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Row: Expense Pie + Breed Distribution -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/margin_medium">
+
+            <!-- Expense Breakdown PieChart -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.Cunnis.Card"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/stats_expense_breakdown"
+                        style="@style/TextAppearance.Cunnis.TitleSmall"
+                        android:textColor="@color/cunnis_accent"
+                        android:layout_marginBottom="8dp" />
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/chartExpenseBreakdown"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtNoExpenseData"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:text="@string/stats_no_chart_data"
+                        style="@style/TextAppearance.Cunnis.BodySmall"
+                        android:textColor="?attr/colorOnSurfaceVariant"
+                        android:gravity="center"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Breed Distribution Horizontal Bar -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.Cunnis.Card"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/stats_breed_distribution"
+                        style="@style/TextAppearance.Cunnis.TitleSmall"
+                        android:textColor="@color/cunnis_control_normal"
+                        android:layout_marginBottom="8dp" />
+
+                    <com.github.mikephil.charting.charts.HorizontalBarChart
+                        android:id="@+id/chartBreedDistribution"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtNoBreedData"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:text="@string/stats_no_chart_data"
+                        style="@style/TextAppearance.Cunnis.BodySmall"
+                        android:textColor="?attr/colorOnSurfaceVariant"
+                        android:gravity="center"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <!-- Extra Stats Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/margin_medium">
+
+            <com.google.android.material.card.MaterialCardView style="@style/Widget.Cunnis.Card.Stat" android:layout_width="0dp" android:layout_height="@dimen/stat_card_height" android:layout_weight="1" android:layout_marginEnd="4dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center">
+                    <com.google.android.material.textview.MaterialTextView android:id="@+id/txtAvgLitter" style="@style/TextAppearance.Cunnis.HeadlineLarge" android:textColor="@color/cunnis_female" />
+                    <com.google.android.material.textview.MaterialTextView android:text="@string/stats_avg_litter_size" style="@style/TextAppearance.Cunnis.BodySmall" android:textColor="?attr/colorOnSurfaceVariant" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView style="@style/Widget.Cunnis.Card.Stat" android:layout_width="0dp" android:layout_height="@dimen/stat_card_height" android:layout_weight="1" android:layout_marginStart="4dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center">
+                    <com.google.android.material.textview.MaterialTextView android:id="@+id/txtTotalParturitions" style="@style/TextAppearance.Cunnis.HeadlineLarge" android:textColor="@color/cunnis_accent" />
+                    <com.google.android.material.textview.MaterialTextView android:text="@string/stats_parturitions" style="@style/TextAppearance.Cunnis.BodySmall" android:textColor="?attr/colorOnSurfaceVariant" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

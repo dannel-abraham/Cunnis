@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginEnd="@dimen/margin_medium">
+
+        <!-- Search bar with filter toggle button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilSearch"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/common_search"
+                app:startIconDrawable="@android:drawable/ic_menu_search"
+                app:startIconTint="?attr/colorOnSurfaceVariant">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnToggleFilters"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:icon="@android:drawable/ic_menu_sort_by_size"
+                android:contentDescription="@string/common_filter"
+                app:iconTint="?attr/colorOnSurfaceVariant" />
+
+        </LinearLayout>
+
+        <!-- Filter bar (collapsible) -->
+        <LinearLayout
+            android:id="@+id/filterBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:paddingBottom="4dp">
+
+            <!-- Gender filter chips -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:clipToPadding="false">
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroupGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/margin_small"
+                    app:singleLine="true"
+                    app:selectionRequired="true"
+                    app:chipSpacingHorizontal="4dp">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipAll"
+                        style="@style/Widget.Material3.FilterChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/filter_all"
+                        android:checked="true" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipMales"
+                        style="@style/Widget.Material3.FilterChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rabbit_male" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chipFemales"
+                        style="@style/Widget.Material3.FilterChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rabbit_female" />
+
+                </com.google.android.material.chip.ChipGroup>
+
+            </HorizontalScrollView>
+
+            <!-- Breed filter dropdown -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilBreed"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:hint="@string/filter_breed"
+                android:labelFor="@+id/actBreed"
+                app:startIconDrawable="@android:drawable/ic_menu_manage"
+                app:startIconTint="?attr/colorOnSurfaceVariant"
+                app:endIconMode="clear_text">
+
+                <AutoCompleteTextView
+                    android:id="@+id/actBreed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Cage filter dropdown -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilCage"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:hint="@string/filter_cage"
+                android:labelFor="@+id/actCage"
+                app:startIconDrawable="@android:drawable/ic_menu_myplaces"
+                app:startIconTint="?attr/colorOnSurfaceVariant"
+                app:endIconMode="clear_text">
+
+                <AutoCompleteTextView
+                    android:id="@+id/actCage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/common_no_data"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        style="@style/TextAppearance.Cunnis.BodyLarge"
+        android:textColor="?attr/colorOnSurfaceVariant" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAdd"
+        style="@style/Widget.Cunnis.FloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_input_add"
+        android:contentDescription="@string/rabbit_add" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

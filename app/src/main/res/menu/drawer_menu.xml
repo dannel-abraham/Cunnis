@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_cemental"
+        android:icon="@drawable/ic_cemental"
+        android:title="@string/cemental_title" />
+    <item
+        android:id="@+id/nav_expenses"
+        android:icon="@drawable/ic_expense"
+        android:title="@string/nav_expenses" />
+    <item
+        android:id="@+id/nav_alerts"
+        android:icon="@drawable/ic_notification"
+        android:title="@string/nav_alerts" />
+    <item
+        android:id="@+id/nav_feeding"
+        android:icon="@drawable/ic_feeding"
+        android:title="@string/feeding_title" />
+    <group android:id="@+id/group_settings">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/nav_settings" />
+        <item
+            android:id="@+id/nav_export_import"
+            android:icon="@drawable/ic_export"
+            android:title="@string/export_title" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_about"
+            android:title="@string/about_title" />
+    </group>
+</menu>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Colors -->
+    <color name="cunnis_accent">#FF8A65</color>
+    <color name="cunnis_primary">#80CBC4</color>
+    <color name="cunnis_primary_dark">#4DB6AC</color>
+    <color name="cunnis_control_highlight">#A7FFEB</color>
+    <color name="cunnis_control_normal">#00BFA5</color>
+    
+    <!-- Light Theme -->
+    <color name="md_theme_light_primary">#006B5E</color>
+    <color name="md_theme_light_on_primary">#FFFFFF</color>
+    <color name="md_theme_light_primary_container">#74F8E1</color>
+    <color name="md_theme_light_on_primary_container">#00201B</color>
+    <color name="md_theme_light_secondary">#4A635D</color>
+    <color name="md_theme_light_on_secondary">#FFFFFF</color>
+    <color name="md_theme_light_secondary_container">#CCE8DF</color>
+    <color name="md_theme_light_on_secondary_container">#06201A</color>
+    <color name="md_theme_light_tertiary">#436279</color>
+    <color name="md_theme_light_on_tertiary">#FFFFFF</color>
+    <color name="md_theme_light_tertiary_container">#C7E7FF</color>
+    <color name="md_theme_light_on_tertiary_container">#001E2F</color>
+    <color name="md_theme_light_error">#BA1A1A</color>
+    <color name="md_theme_light_on_error">#FFFFFF</color>
+    <color name="md_theme_light_error_container">#FFDAD6</color>
+    <color name="md_theme_light_on_error_container">#410002</color>
+    <color name="md_theme_light_background">#FAFDFB</color>
+    <color name="md_theme_light_on_background">#191C1C</color>
+    <color name="md_theme_light_surface">#FAFDFB</color>
+    <color name="md_theme_light_on_surface">#191C1C</color>
+    <color name="md_theme_light_surface_variant">#DBE5DF</color>
+    <color name="md_theme_light_on_surface_variant">#3F4945</color>
+    <color name="md_theme_light_outline">#6F7975</color>
+    <color name="md_theme_light_outline_variant">#BFC9C4</color>
+    
+    <!-- Dark Theme -->
+    <color name="md_theme_dark_primary">#5ADBC5</color>
+    <color name="md_theme_dark_on_primary">#003731</color>
+    <color name="md_theme_dark_primary_container">#005046</color>
+    <color name="md_theme_dark_on_primary_container">#74F8E1</color>
+    <color name="md_theme_dark_secondary">#B0CCC3</color>
+    <color name="md_theme_dark_on_secondary">#1C352F</color>
+    <color name="md_theme_dark_secondary_container">#334B45</color>
+    <color name="md_theme_dark_on_secondary_container">#CCE8DF</color>
+    <color name="md_theme_dark_tertiary">#AACBE3</color>
+    <color name="md_theme_dark_on_tertiary">#103447</color>
+    <color name="md_theme_dark_tertiary_container">#2C4B60</color>
+    <color name="md_theme_dark_on_tertiary_container">#C7E7FF</color>
+    <color name="md_theme_dark_error">#FFB4AB</color>
+    <color name="md_theme_dark_on_error">#690005</color>
+    <color name="md_theme_dark_error_container">#93000A</color>
+    <color name="md_theme_dark_on_error_container">#FFDAD6</color>
+    <color name="md_theme_dark_background">#191C1C</color>
+    <color name="md_theme_dark_on_background">#E1E3E1</color>
+    <color name="md_theme_dark_surface">#191C1C</color>
+    <color name="md_theme_dark_on_surface">#E1E3E1</color>
+    <color name="md_theme_dark_surface_variant">#3F4945</color>
+    <color name="md_theme_dark_on_surface_variant">#BFC9C4</color>
+    <color name="md_theme_dark_outline">#89938F</color>
+    <color name="md_theme_dark_outline_variant">#3F4945</color>
+    
+    <!-- Utility Colors -->
+    <color name="cunnis_white">#FFFFFF</color>
+    <color name="cunnis_black">#000000</color>
+    <color name="cunnis_transparent">#00000000</color>
+    <color name="cunnis_success">#69F0AE</color>
+    <color name="cunnis_warning">#FFD740</color>
+    <color name="cunnis_error">#FF5252</color>
+    <color name="cunnis_info">#40C4FF</color>
+    <color name="cunnis_male">#42A5F5</color>
+    <color name="cunnis_female">#EC407A</color>
+    <color name="cunnis_cemental">#FF8A65</color>
+    <color name="cunnis_cage_bg">#F5F5F5</color>
+    <color name="cunnis_divider">#E0E0E0</color>
+    <color name="cunnis_card_shadow">#20000000</color>
+    
+    <!-- Bottom Nav -->
+    <color name="bottom_nav_bg_light">#FFFFFF</color>
+    <color name="bottom_nav_bg_dark">#1E1E1E</color>
+    <color name="bottom_nav_selected">#00BFA5</color>
+    <color name="bottom_nav_unselected">#757575</color>
+    
+    <!-- Status colors -->
+    <color name="status_active">#69F0AE</color>
+    <color name="status_dead">#EF5350</color>
+    <color name="status_sold">#42A5F5</color>
+    <color name="status_slaughtered">#8D6E63</color>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.Cunnis.Card.Rabbit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_small">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_small"
+        android:gravity="center_vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgRabbit"
+            android:layout_width="@dimen/rabbit_photo_size"
+            android:layout_height="@dimen/rabbit_photo_size"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:scaleType="centerCrop"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/cunnis_control_normal" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/margin_medium">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="?attr/colorOnSurface"
+                android:fontFamily="sans-serif-medium"
+                android:maxLines="1"
+                android:ellipsize="end" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtIdentifier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                android:layout_marginTop="2dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipGender"
+                    style="@style/Widget.Cunnis.Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:textSize="11sp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipBreed"
+                    style="@style/Widget.Cunnis.Chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="4dp"
+                    android:textSize="11sp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_media_play"
+            app:tint="?attr/colorOnSurfaceVariant"
+            android:contentDescription="@string/common_edit"
+            android:rotation="90" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

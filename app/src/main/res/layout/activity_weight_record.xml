@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_back"
+            app:title="@string/weight_record_title"
+            app:titleTextColor="?attr/colorOnSurface" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_large">
+
+            <!-- Weight Info Cards -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/margin_medium">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="1dp"
+                    app:contentPadding="12dp"
+                    android:layout_marginEnd="@dimen/margin_small">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/weight_latest_label"
+                            android:textSize="12sp"
+                            android:textColor="?attr/colorOnSurfaceVariant" />
+
+                        <TextView
+                            android:id="@+id/txtLatestWeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/common_na"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="?attr/colorOnSurface"
+                            android:layout_marginTop="4dp" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="1dp"
+                    app:contentPadding="12dp"
+                    android:layout_marginStart="@dimen/margin_small">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/weight_avg_label"
+                            android:textSize="12sp"
+                            android:textColor="?attr/colorOnSurfaceVariant" />
+
+                        <TextView
+                            android:id="@+id/txtAvgWeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/common_na"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="?attr/colorOnSurface"
+                            android:layout_marginTop="4dp" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <!-- Weight Input -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilWeight"
+                style="@style/Widget.Cunnis.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/weight_value">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Record Date -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilRecordDate"
+                style="@style/Widget.Cunnis.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/common_date"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtRecordDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Photo Section -->
+            <LinearLayout
+                android:id="@+id/layoutPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:paddingTop="@dimen/margin_small"
+                android:paddingBottom="@dimen/margin_small">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardPhotoPreview"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    app:cardCornerRadius="32dp"
+                    app:cardElevation="1dp"
+                    android:layout_marginEnd="@dimen/margin_medium">
+
+                    <ImageView
+                        android:id="@+id/imgPhotoPreview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@android:drawable/ic_menu_camera"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/weight_photo" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnTakePhoto"
+                    style="@style/Widget.Cunnis.Button.Outline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="@string/weight_photo"
+                    android:textSize="13sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnRemovePhoto"
+                    style="@style/Widget.Cunnis.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="@string/common_delete"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <!-- Notes -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilNotes"
+                style="@style/Widget.Cunnis.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/common_notes"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtNotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:minLines="2" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Save Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSave"
+                style="@style/Widget.Cunnis.Button.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="@string/common_save"
+                android:layout_marginTop="@dimen/margin_xlarge" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

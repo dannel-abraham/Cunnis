@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_medium">
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.Cunnis.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/item_info_row"
+                    android:id="@+id/rowBreed" />
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="?attr/colorOutlineVariant" />
+                <include layout="@layout/item_info_row"
+                    android:id="@+id/rowAge" />
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="?attr/colorOutlineVariant" />
+                <include layout="@layout/item_info_row"
+                    android:id="@+id/rowBirthDate" />
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="?attr/colorOutlineVariant" />
+                <include layout="@layout/item_info_row"
+                    android:id="@+id/rowWeight" />
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="?attr/colorOutlineVariant" />
+                <include layout="@layout/item_info_row"
+                    android:id="@+id/rowCage" />
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="?attr/colorOutlineVariant" />
+                <include layout="@layout/item_info_row"
+                    android:id="@+id/rowSire" />
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="?attr/colorOutlineVariant" />
+                <include layout="@layout/item_info_row"
+                    android:id="@+id/rowDam" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/Widget.Cunnis.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_medium">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rabbit_notes"
+                    style="@style/TextAppearance.Cunnis.LabelLarge"
+                    android:textColor="?attr/colorPrimary" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txtNotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TextAppearance.Cunnis.BodyMedium"
+                    android:textColor="?attr/colorOnSurface"
+                    android:layout_marginTop="@dimen/margin_small" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

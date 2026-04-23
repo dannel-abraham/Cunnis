@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cunnis</string>
+    <string name="app_version">v0.1.0.0</string>
+    <string name="app_author">Dannel Alvarez Nieto</string>
+    <string name="app_dedication">a mi viejo</string>
+    <string name="app_telegram">\@alvareznieto.dannel</string>
+    <string name="app_email">alvareznieto.dannel@gmail.com</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_cages">Cages</string>
+    <string name="nav_rabbits">Rabbits</string>
+    <string name="nav_stats">Statistics</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_alerts">Alerts</string>
+    <string name="nav_expenses">Expenses</string>
+
+    <!-- Common -->
+    <string name="common_save">Save</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="common_delete">Delete</string>
+    <string name="common_edit">Edit</string>
+    <string name="common_add">Add</string>
+    <string name="common_confirm">Confirm</string>
+    <string name="common_back">Back</string>
+    <string name="common_yes">Yes</string>
+    <string name="common_no">No</string>
+    <string name="common_search">Search</string>
+    <string name="common_filter">Filter</string>
+    <string name="common_no_data">No data available</string>
+    <string name="common_loading">Loading…</string>
+    <string name="common_error">An error occurred</string>
+    <string name="common_success">Operation successful</string>
+    <string name="common_close">Close</string>
+    <string name="common_ok">OK</string>
+    <string name="common_na">N/A</string>
+    <string name="common_from">From</string>
+    <string name="common_to">To</string>
+    <string name="common_date">Date</string>
+    <string name="common_notes">Notes</string>
+    <string name="common_total">Total</string>
+    <string name="common_all">All</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Welcome to Cunnis</string>
+    <string name="profile_subtitle">Set up your farm profile</string>
+    <string name="profile_username">Username</string>
+    <string name="profile_farm_name">Farm Name</string>
+    <string name="profile_email">Email</string>
+    <string name="profile_phone">Phone</string>
+    <string name="profile_address">Address</string>
+    <string name="profile_username_required">Username is required</string>
+    <string name="profile_welcome">Welcome, %s!</string>
+
+    <!-- Cages -->
+    <string name="cage_title">Cages</string>
+    <string name="cage_add">Add Cage</string>
+    <string name="cage_edit">Edit Cage</string>
+    <string name="cage_number">Cage Number</string>
+    <string name="cage_number_hint">Enter cage number</string>
+    <string name="cage_notes">Notes</string>
+    <string name="cage_rabbit_count">%d rabbit(s)</string>
+    <string name="cage_empty">No rabbits in this cage</string>
+    <string name="cage_deleted">Cage deleted</string>
+    <string name="cage_delete_confirm">Delete this cage? Rabbits will be unassigned.</string>
+    <string name="cage_detail">Cage #%d</string>
+
+    <!-- Rabbits -->
+    <string name="rabbit_title">Rabbits</string>
+    <string name="rabbit_add">Add Rabbit</string>
+    <string name="rabbit_edit">Edit Rabbit</string>
+    <string name="rabbit_name">Name</string>
+    <string name="rabbit_name_required">Name is required</string>
+    <string name="rabbit_identifier">ID</string>
+    <string name="rabbit_gender">Gender</string>
+    <string name="rabbit_male">Male</string>
+    <string name="rabbit_female">Female</string>
+    <string name="rabbit_breed">Breed</string>
+    <string name="rabbit_breed_hint">Type or select breed</string>
+    <string name="rabbit_birth_date">Date of Birth</string>
+    <string name="rabbit_born_in_farm">Born in farm</string>
+    <string name="rabbit_sire">Father</string>
+    <string name="rabbit_dam">Mother</string>
+    <string name="rabbit_cage">Cage</string>
+    <string name="rabbit_no_cage">No cage assigned</string>
+    <string name="rabbit_photo">Photo</string>
+    <string name="rabbit_take_photo">Take Photo</string>
+    <string name="rabbit_select_photo">Select from Gallery</string>
+    <string name="rabbit_age">Age</string>
+    <string name="rabbit_weight">Weight</string>
+    <string name="rabbit_status">Status</string>
+    <string name="rabbit_status_active">Active</string>
+    <string name="rabbit_status_dead">Dead</string>
+    <string name="rabbit_status_sold">Sold</string>
+    <string name="rabbit_status_slaughtered">Slaughtered</string>
+    <string name="rabbit_notes">Notes</string>
+    <string name="rabbit_deleted">Rabbit deleted</string>
+    <string name="rabbit_delete_confirm">Delete this rabbit? All history will be lost.</string>
+    <string name="rabbit_detail">Rabbit Detail</string>
+    <string name="rabbit_days_old">%d days old</string>
+    <string name="rabbit_months_old">%d months old</string>
+    <string name="rabbit_unknown_age">Unknown age</string>
+    <string name="rabbit_profile">Profile</string>
+
+    <!-- Cemental -->
+    <string name="cemental_title">Buck (Reproductor)</string>
+    <string name="cemental_no_set">No reproductor set</string>
+    <string name="cemental_set">Set as Reproductor</string>
+    <string name="cemental_info">The buck is the main male reproductor of your farm.</string>
+    <string name="cemental_confirm_change">Setting a new reproductor will remove the current one. Continue?</string>
+
+    <!-- Health -->
+    <string name="health_title">Health History</string>
+    <string name="health_add">Add Health Record</string>
+    <string name="health_type">Type</string>
+    <string name="health_checkup">Checkup</string>
+    <string name="health_vaccination">Vaccination</string>
+    <string name="health_deworming">Deworming</string>
+    <string name="health_illness">Illness</string>
+    <string name="health_injury">Injury</string>
+    <string name="health_surgery">Surgery</string>
+    <string name="health_veterinarian">Veterinarian</string>
+    <string name="health_medication">Medication</string>
+    <string name="health_cost">Cost</string>
+    <string name="health_next_due">Next Due</string>
+
+    <!-- Weight -->
+    <string name="weight_title">Weight History</string>
+    <string name="weight_add">Add Weight Record</string>
+    <string name="weight_value">Weight (lb)</string>
+    <string name="weight_hint">Enter weight in pounds</string>
+    <string name="weight_avg">Average</string>
+    <string name="weight_max">Max</string>
+    <string name="weight_current">Current</string>
+    <string name="weight_lbs">%.1f lb</string>
+
+    <!-- Reproduction -->
+    <string name="repro_title">Reproductive History</string>
+    <string name="estrus_title">Estrus Records</string>
+    <string name="estrus_add">Record Estrus</string>
+    <string name="estrus_date">Estrus Date</string>
+    <string name="estrus_observations">Observations</string>
+    <string name="estrus_receptive">Receptive</string>
+    <string name="estrus_not_receptive">Not Receptive</string>
+    <string name="estrus_next_predicted">Next predicted: %s</string>
+    <string name="estrus_empty">No estrus records yet</string>
+    <string name="estrus_delete_confirm">Delete this estrus record?</string>
+    <string name="estrus_deleted">Estrus record deleted</string>
+    <string name="estrus_saved">Estrus record saved</string>
+    <string name="mating_title">Mating Records</string>
+    <string name="mating_add">Record Mating</string>
+    <string name="mating_date">Mating Date</string>
+    <string name="mating_buck">Buck</string>
+    <string name="mating_doe">Doe</string>
+    <string name="mating_effective">Effective</string>
+    <string name="mating_result">Result</string>
+    <string name="mating_pending">Pending</string>
+    <string name="mating_successful">Successful</string>
+    <string name="mating_unsuccessful">Unsuccessful</string>
+    <string name="mating_empty">No mating records yet</string>
+    <string name="mating_due_date">Due date: %s</string>
+    <string name="parturition_title">Parturition Records</string>
+    <string name="parturition_add">Record Parturition</string>
+    <string name="parturition_date">Parturition Date</string>
+    <string name="parturition_due_date">Due Date</string>
+    <string name="parturition_total_born">Total Born</string>
+    <string name="parturition_born_alive">Born Alive</string>
+    <string name="parturition_born_dead">Born Dead</string>
+    <string name="parturition_weaned">Weaned</string>
+    <string name="parturition_est_weaning">Est. Weaning</string>
+    <string name="parturition_complications">Complications</string>
+    <string name="parturition_empty">No parturition records yet</string>
+
+    <!-- Movement -->
+    <string name="movement_title">Movement History</string>
+    <string name="movement_add">Record Movement</string>
+    <string name="movement_from">From</string>
+    <string name="movement_to">To</string>
+    <string name="movement_reason">Reason</string>
+    <string name="movement_weaning">Weaning</string>
+    <string name="movement_breeding">Breeding</string>
+    <string name="movement_reorganization">Reorganization</string>
+
+    <!-- Stats -->
+    <string name="stats_title">Statistics</string>
+    <string name="stats_by_rabbit">By Rabbit</string>
+    <string name="stats_by_cage">By Cage</string>
+    <string name="stats_general">General</string>
+    <string name="stats_total_rabbits">Total Rabbits</string>
+    <string name="stats_active_rabbits">Active Rabbits</string>
+    <string name="stats_total_cages">Total Cages</string>
+    <string name="stats_total_born">Total Born</string>
+    <string name="stats_mortality_rate">Mortality Rate</string>
+    <string name="stats_avg_litter_size">Avg Litter Size</string>
+    <string name="stats_total_expenses">Total Expenses</string>
+    <string name="stats_weight_chart">Weight Evolution</string>
+    <string name="stats_reproduction_chart">Reproduction Overview</string>
+
+    <!-- Enhanced Stats -->
+    <string name="stats_weight_evolution">Weight Evolution</string>
+    <string name="stats_reproduction_overview">Reproduction Overview</string>
+    <string name="stats_expense_breakdown">Expense Breakdown</string>
+    <string name="stats_breed_distribution">Breed Distribution</string>
+    <string name="stats_month">Month</string>
+    <string name="stats_alive">Born Alive</string>
+    <string name="stats_dead">Born Dead</string>
+    <string name="stats_no_chart_data">No data available for chart</string>
+    <string name="stats_rabbit_title">Rabbit Statistics</string>
+    <string name="stats_age">Age</string>
+    <string name="stats_matings">Matings</string>
+    <string name="stats_parturitions">Parturitions</string>
+
+    <!-- Expenses -->
+    <string name="expense_title">Expenses</string>
+    <string name="expense_add">Add Expense</string>
+    <string name="expense_category">Category</string>
+    <string name="expense_feed">Feed</string>
+    <string name="expense_medicine">Medicine</string>
+    <string name="expense_equipment">Equipment</string>
+    <string name="expense_veterinary">Veterinary</string>
+    <string name="expense_transport">Transport</string>
+    <string name="expense_amount">Amount ($)</string>
+    <string name="expense_description">Description</string>
+    <string name="expense_deleted">Expense deleted</string>
+
+    <!-- Feeding -->
+    <string name="feeding_title">Feeding Records</string>
+    <string name="feeding_add">Add Feeding Record</string>
+    <string name="feeding_type">Feed Type</string>
+    <string name="feeding_quantity">Quantity (lb)</string>
+    <string name="feeding_cage">Cage</string>
+    <string name="feeding_list_title">Feeding Records</string>
+    <string name="feeding_list_empty">No feeding records</string>
+    <string name="feeding_this_month">This Month</string>
+    <string name="feeding_total_quantity">Total Quantity</string>
+    <string name="feeding_lbs_month">%.1f lb this month</string>
+    <string name="feeding_filter_all">All</string>
+    <string name="home_select_doe">Select a Doe</string>
+    <string name="home_no_females">No active females available</string>
+    <string name="home_mating_for">Record mating for: %s</string>
+
+    <!-- Alerts -->
+    <string name="alert_title">Alerts</string>
+    <string name="alert_config_title">Alert Configuration</string>
+    <string name="alert_estrus">Estrus Prediction</string>
+    <string name="alert_gestation">Gestation Due</string>
+    <string name="alert_weaning">Weaning Due</string>
+    <string name="alert_reproductive_age">Reproductive Age</string>
+    <string name="alert_weight_check">Monthly Weight Check</string>
+    <string name="alert_vaccination">Vaccination Due</string>
+    <string name="alert_advance_days">Advance days</string>
+    <string name="alert_advance_hours">Advance hours</string>
+    <string name="alert_enabled">Enabled</string>
+    <string name="alert_disabled">Disabled</string>
+
+    <!-- Export/Import -->
+    <string name="export_title">Export / Import</string>
+    <string name="export_db">Export Database</string>
+    <string name="import_db">Import Database</string>
+    <string name="export_success">Database exported successfully</string>
+    <string name="import_success">Database imported successfully</string>
+    <string name="import_confirm">Importing a database will REPLACE all current data. Are you sure?</string>
+    <string name="import_error">Error importing database</string>
+    <string name="export_format">Cunnis Backup (.cbckp)</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_profile">Farm Profile</string>
+    <string name="settings_theme">Theme</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_alert_config">Alert Configuration</string>
+    <string name="settings_export">Export Data</string>
+    <string name="settings_import">Import Data</string>
+    <string name="settings_about">About</string>
+    <string name="settings_theme_light">Light</string>
+    <string name="settings_theme_dark">Dark</string>
+    <string name="settings_theme_system">System</string>
+
+    <!-- Home -->
+    <string name="home_welcome">Welcome to your farm</string>
+    <string name="home_total">Total</string>
+    <string name="home_males">Males</string>
+    <string name="home_females">Females</string>
+    <string name="home_cages">Cages</string>
+    <string name="home_recent_alerts">Recent Alerts</string>
+    <string name="home_quick_actions">Quick Actions</string>
+    <string name="home_add_rabbit">Add Rabbit</string>
+    <string name="home_add_cage">Add Cage</string>
+    <string name="home_record_mating">Record Mating</string>
+    <string name="home_add_expense">Add Expense</string>
+
+    <!-- Exit/Transfer -->
+    <string name="exit_title">Record Exit</string>
+    <string name="exit_reason">Exit Reason</string>
+    <string name="exit_date">Exit Date</string>
+    <string name="exit_notes">Exit Notes</string>
+    <string name="exit_natural_death">Natural Death</string>
+    <string name="exit_disease">Disease</string>
+    <string name="exit_sold">Sold</string>
+    <string name="exit_slaughtered">Slaughtered</string>
+    <string name="exit_accident">Accident</string>
+
+    <!-- About -->
+    <string name="about_title">About Cunnis</string>
+    <string name="about_description">Professional rabbit farm management suite</string>
+    <string name="about_version">Version: %s</string>
+    <string name="about_author">Author: %s</string>
+    <string name="about_contact">Contact</string>
+
+    <!-- Drawer -->
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="drawer_header_subtitle">Rabbit Farm Manager</string>
+
+    <!-- Errors -->
+    <string name="error_required_field">This field is required</string>
+    <string name="error_invalid_data">Invalid data</string>
+    <string name="error_camera">Could not access camera</string>
+    <string name="error_storage">Storage permission denied</string>
+    <string name="error_generic">Something went wrong</string>
+
+    <!-- Health Event Activity -->
+    <string name="health_event_title">Add Health Event</string>
+    <string name="health_event_edit_title">Edit Health Event</string>
+    <string name="health_event_type_required">Event type is required</string>
+    <string name="health_event_saved">Health event saved</string>
+    <string name="health_title_label">Title</string>
+    <string name="health_description_label">Description</string>
+    <string name="health_veterinarian_label">Veterinarian</string>
+    <string name="health_medication_label">Medication</string>
+    <string name="health_cost_label">Cost ($)</string>
+    <string name="health_next_due_label">Next Due Date</string>
+
+    <!-- Mating Record Activity -->
+    <string name="mating_record_title">Record Mating</string>
+    <string name="mating_select_buck">Select Buck</string>
+    <string name="mating_date_label">Mating Date</string>
+    <string name="mating_effective_label">Effective</string>
+    <string name="mating_attempt_label">Attempt Number</string>
+    <string name="mating_observations_label">Observations</string>
+    <string name="mating_saved">Mating record saved</string>
+
+    <!-- Parturition Activity -->
+    <string name="parturition_record_title">Record Parturition</string>
+    <string name="parturition_select_buck">Select Buck</string>
+    <string name="parturition_estimated_due">Estimated Due Date</string>
+    <string name="parturition_total_born_hint">Total born</string>
+    <string name="parturition_born_alive_hint">Born alive</string>
+    <string name="parturition_born_dead_hint">Born dead</string>
+    <string name="parturition_weaned_hint">Weaned</string>
+    <string name="parturition_complications_label">Complications</string>
+    <string name="parturition_complications_notes_label">Complications Notes</string>
+    <string name="parturition_saved">Parturition record saved</string>
+
+    <!-- Weight Record Activity -->
+    <string name="weight_record_title">Record Weight</string>
+    <string name="weight_latest_label">Latest Weight</string>
+    <string name="weight_avg_label">Average Weight</string>
+    <string name="weight_required">Weight is required</string>
+    <string name="weight_saved">Weight record saved</string>
+
+    <!-- Expense Activity -->
+    <string name="add_expense_title">Add Expense</string>
+    <string name="expense_description_required">Description is required</string>
+    <string name="expense_amount_required">Amount is required</string>
+    <string name="expense_saved">Expense saved</string>
+    <string name="expense_select_rabbit">Select Rabbit (optional)</string>
+    <string name="expense_select_cage">Select Cage (optional)</string>
+
+    <!-- Feeding Activity -->
+    <string name="add_feeding_title">Record Feeding</string>
+    <string name="feeding_feed_type_required">Feed type is required</string>
+    <string name="feeding_quantity_required">Quantity is required</string>
+    <string name="feeding_select_cage">Select Cage</string>
+    <string name="feeding_saved">Feeding record saved</string>
+
+    <!-- Export/Import Activity -->
+    <string name="export_import_title">Export / Import</string>
+    <string name="export_database_desc">Create a backup of your entire database</string>
+    <string name="import_database_desc">Restore from a previous backup file</string>
+    <string name="export_db_stats">Database Statistics</string>
+    <string name="export_total_records">%d records</string>
+    <string name="export_in_progress">Exporting database…</string>
+    <string name="import_in_progress">Importing database…</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_alerts">Farm Alerts</string>
+    <string name="notification_channel_alerts_desc">Alerts for your rabbit farm</string>
+    <string name="alert_notification_title">Farm Alert</string>
+
+    <!-- Settings -->
+    <string name="settings_profile_section">Farm Profile</string>
+    <string name="settings_edit_profile">Edit Profile</string>
+    <string name="settings_appearance">Appearance</string>
+    <string name="settings_language_section">Language</string>
+    <string name="settings_lang_en">English</string>
+    <string name="settings_lang_es">Español</string>
+    <string name="settings_lang_ru">Русский</string>
+    <string name="settings_notifications_section">Notifications</string>
+    <string name="settings_data_section">Data Management</string>
+    <string name="settings_about_section">About</string>
+    <string name="settings_dedication">%s</string>
+    <string name="settings_theme_applied">Theme changed</string>
+    <string name="settings_language_applied">Language changed (restart may be needed)</string>
+
+    <!-- Cage Detail -->
+    <string name="cage_detail_title">Cage #%d</string>
+    <string name="cage_detail_rabbits">Rabbits in Cage</string>
+    <string name="cage_detail_add_rabbit">Add Rabbit</string>
+    <string name="cage_detail_no_rabbits">No rabbits in this cage</string>
+
+    <!-- Cemental -->
+    <string name="cemental_current">Current Buck</string>
+    <string name="cemental_set_new">Set New Buck</string>
+    <string name="cemental_remove">Remove Buck</string>
+    <string name="cemental_stats">Buck Statistics</string>
+    <string name="cemental_total_matings">Total Matings</string>
+    <string name="cemental_successful_matings">Successful Matings</string>
+    <string name="cemental_total_offspring">Total Offspring</string>
+    <string name="cemental_recent_matings">Recent Matings</string>
+    <string name="cemental_select_male">Select a Male Rabbit</string>
+    <string name="cemental_removed">Buck removed</string>
+    <string name="cemental_no_male">No active males available</string>
+
+    <!-- Expenses List -->
+    <string name="expenses_empty">No expenses recorded</string>
+    <string name="expenses_filter_all">All</string>
+    <string name="expenses_total_label">Total Expenses</string>
+
+    <!-- Alerts -->
+    <string name="alerts_empty">No alert configurations</string>
+    <string name="alerts_check_now">Check Alerts Now</string>
+    <string name="alerts_no_pending">No pending alerts</string>
+    <string name="alerts_pending_count">%d pending alert(s)</string>
+    <string name="alerts_estrus_prediction_desc">Notifies when a doe is approaching her next estrus cycle</string>
+    <string name="alerts_gestation_due_desc">Notifies when a gestation period is nearing its due date</string>
+    <string name="alerts_weaning_desc">Notifies when kits are ready to be weaned</string>
+    <string name="alerts_reproductive_age_desc">Notifies when rabbits reach reproductive maturity</string>
+    <string name="alerts_weight_check_desc">Monthly reminder to record rabbit weights</string>
+    <string name="alerts_vaccination_due_desc">Notifies when a vaccination is due</string>
+
+    <!-- Exit Dialog -->
+    <string name="exit_confirm">Record this exit? The rabbit will be marked as inactive.</string>
+    <string name="exit_recorded">Exit recorded successfully</string>
+    <string name="exit_select_reason">Select reason</string>
+
+    <!-- Transfer Dialog -->
+    <string name="transfer_current_cage">Current Cage</string>
+    <string name="transfer_target_cage">Target Cage</string>
+    <string name="transfer_select_cage">Select target cage</string>
+    <string name="transfer_reason">Reason</string>
+    <string name="transfer_select_reason">Select reason</string>
+    <string name="transfer_confirm">Transfer this rabbit to cage #%d?</string>
+    <string name="transfer_success">Rabbit transferred successfully</string>
+    <string name="transfer_no_cages">No other cages available</string>
+
+    <!-- Parent Tracking -->
+    <string name="rabbit_sire_placeholder">Select Sire (Father)</string>
+    <string name="rabbit_dam_placeholder">Select Dam (Mother)</string>
+    <string name="rabbit_parent_format">%s (%s)</string>
+
+    <!-- Weight History Chart -->
+    <string name="filter_show">Show Filters</string>
+    <string name="filter_hide">Hide Filters</string>
+    <string name="filter_all">All</string>
+    <string name="filter_gender">Gender</string>
+    <string name="filter_breed">Breed</string>
+    <string name="filter_cage">Cage</string>
+    <string name="filter_no_results">No rabbits match the current filters</string>
+    <string name="weight_chart_title">Weight Evolution</string>
+    <string name="weight_stats_latest">Latest</string>
+    <string name="weight_stats_avg">Average</string>
+    <string name="weight_stats_max">Maximum</string>
+
+    <!-- Home Pending Alerts -->
+    <string name="home_pending_alerts">Pending Alerts</string>
+    <string name="home_view_all_alerts">View All</string>
+    <string name="home_no_pending_alerts">No pending alerts</string>
+
+    <!-- Alert Check Progress -->
+    <string name="alert_checking">Checking alerts…</string>
+    <string name="alert_notifications_sent">%d notification(s) sent</string>
+    <string name="alert_check_complete">Alert check complete</string>
+
+    <!-- Weight Photo -->
+    <string name="weight_photo">Add Photo</string>
+    <string name="weight_take_photo">Take Photo</string>
+    <string name="weight_select_gallery">Select from Gallery</string>
+
+    <!-- Import Restart -->
+    <string name="import_restart_required">Database imported. Please restart the app for changes to take effect.</string>
+    <string name="import_restart">Restart</string>
+
+    <!-- Rabbit Birth Date -->
+    <string name="rabbit_birth_date_hint">Select date</string>
+
+    <!-- Sale Price & Parent Labels -->
+    <string name="exit_sale_price">Sale Price ($)</string>
+    <string name="rabbit_sire_label">Sire (Father)</string>
+    <string name="rabbit_dam_label">Dam (Mother)</string>
+    <string name="rabbit_unknown_parent">Unknown</string>
+
+    <!-- Category display names -->
+    <string name="category_other">Other</string>
+    <string name="category_feed">Feed</string>
+    <string name="category_medicine">Medicine</string>
+    <string name="category_equipment">Equipment</string>
+    <string name="category_veterinary">Veterinary</string>
+    <string name="category_transport">Transport</string>
+
+    <!-- Chart labels -->
+    <string name="chart_weight_lb">Weight (lb)</string>
+    <string name="chart_average_weight">Average</string>
+    <string name="chart_avg_weight_lb">Avg Weight (lb)</string>
+
+    <!-- Alert notification messages -->
+    <string name="alert_estrus_msg">Estrus predicted for %1$s (expected: %2$s)</string>
+    <string name="alert_gestation_msg">Parturition due for %1$s (expected: %2$s)</string>
+    <string name="alert_weaning_msg">Kits ready for weaning from %1$s (since: %2$s)</string>
+    <string name="alert_weight_msg">Monthly weight check due for %1$s (last: %2$s)</string>
+    <string name="alert_reproductive_msg">%1$s has reached reproductive age</string>
+    <string name="alert_vaccination_msg">Vaccination due for %1$s — %2$s</string>
+    <string name="alert_unknown_rabbit">Unknown rabbit</string>
+    <string name="alert_unknown_doe">Unknown doe</string>
+
+    <!-- Misc -->
+    <string name="cage_format">Cage #%d</string>
+    <string name="weight_photo_note">Weight: </string>
+    <string name="alert_type_unknown">Unknown</string>
+</resources>

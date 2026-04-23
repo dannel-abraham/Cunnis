@@ -1,0 +1,72 @@
+*.iml
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+gen/
+bin/
+out/
+.navigation/
+*.log
+*.hprof
+
+# Built application files
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Android Studio
+.idea/
+.navigation/
+captures/
+
+# Keystore files (optional - commented out since we commit release-key.jks)
+# *.jks
+# *.keystore
+
+# Log Files
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# NDK
+obj/
+.externalNativeBuild/
+
+# Google Services (not used - 100% offline)
+google-services.json
+
+# Proguard
+proguard/debug/
+proguard/release/

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_back"
+            app:title="@string/parturition_record_title"
+            app:titleTextColor="?attr/colorOnSurface" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_large">
+
+            <!-- Doe Info -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilDoe"
+                style="@style/Widget.Cunnis.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mating_doe">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtDoe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Buck Selection -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilBuck"
+                style="@style/Widget.Cunnis.TextInputLayout.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/parturition_select_buck"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <AutoCompleteTextView
+                    android:id="@+id/actBuck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Link Mating Record -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilMatingRecord"
+                style="@style/Widget.Cunnis.TextInputLayout.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mating_title"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <AutoCompleteTextView
+                    android:id="@+id/actMatingRecord"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Parturition Date -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilParturitionDate"
+                style="@style/Widget.Cunnis.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/parturition_date"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtParturitionDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Estimated Due Date -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilEstimatedDueDate"
+                style="@style/Widget.Cunnis.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/parturition_estimated_due"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtEstimatedDueDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Birth Stats -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilTotalBorn"
+                    style="@style/Widget.Cunnis.TextInputLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/parturition_total_born_hint">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtTotalBorn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:text="0" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilBornAlive"
+                    style="@style/Widget.Cunnis.TextInputLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:hint="@string/parturition_born_alive_hint">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtBornAlive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:text="0" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_small">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilBornDead"
+                    style="@style/Widget.Cunnis.TextInputLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/parturition_born_dead_hint">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtBornDead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:text="0" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tilWeaned"
+                    style="@style/Widget.Cunnis.TextInputLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:hint="@string/parturition_weaned_hint">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtWeaned"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:text="0" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <!-- Complications Checkbox -->
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/chkComplications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/parturition_complications_label"
+                android:layout_marginTop="@dimen/margin_medium" />
+
+            <!-- Complications Notes -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilComplicationsNotes"
+                style="@style/Widget.Cunnis.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/parturition_complications_notes_label"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtComplicationsNotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:minLines="2" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Notes -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilNotes"
+                style="@style/Widget.Cunnis.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/common_notes"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtNotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:minLines="2" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Save Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSave"
+                style="@style/Widget.Cunnis.Button.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="@string/common_save"
+                android:layout_marginTop="@dimen/margin_xlarge" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

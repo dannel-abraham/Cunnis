@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_back"
+            app:title="@string/settings_title"
+            app:titleTextColor="?attr/colorOnSurface" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_medium">
+
+            <!-- Farm Profile Section -->
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_profile_section"
+                style="@style/TextAppearance.Cunnis.TitleMedium"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:textColor="?attr/colorPrimary" />
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.Cunnis.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_large">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_medium">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.Cunnis.TitleMedium" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtFarmName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.Cunnis.BodyMedium"
+                        android:textColor="?attr/colorOnSurfaceVariant"
+                        android:layout_marginTop="@dimen/margin_small" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.Cunnis.BodySmall"
+                        android:textColor="?attr/colorOnSurfaceVariant"
+                        android:layout_marginTop="@dimen/margin_small" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnEditProfile"
+                        style="@style/Widget.Cunnis.Button.Outline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="@string/settings_edit_profile"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:textSize="13sp"
+                        android:minWidth="0dp"
+                        android:paddingStart="@dimen/padding_medium"
+                        android:paddingEnd="@dimen/padding_medium" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Appearance Section -->
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_appearance"
+                style="@style/TextAppearance.Cunnis.TitleMedium"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:textColor="?attr/colorPrimary" />
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.Cunnis.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_large">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_medium">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupTheme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/radioLight"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/settings_theme_light" />
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/radioDark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/settings_theme_dark" />
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/radioSystem"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/settings_theme_system" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Language Section -->
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_language_section"
+                style="@style/TextAppearance.Cunnis.TitleMedium"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:textColor="?attr/colorPrimary" />
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.Cunnis.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_large">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_medium">
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupLanguage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/radioLangEn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/settings_lang_en" />
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/radioLangEs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/settings_lang_es" />
+
+                        <com.google.android.material.radiobutton.MaterialRadioButton
+                            android:id="@+id/radioLangRu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/settings_lang_ru" />
+
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Notifications Section -->
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_notifications_section"
+                style="@style/TextAppearance.Cunnis.TitleMedium"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:textColor="?attr/colorPrimary" />
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.Cunnis.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_large">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/padding_medium">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/TextAppearance.Cunnis.BodyLarge"
+                        android:text="@string/settings_notifications" />
+
+                    <com.google.android.material.materialswitch.MaterialSwitch
+                        android:id="@+id/switchNotifications"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Data Management Section -->
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_data_section"
+                style="@style/TextAppearance.Cunnis.TitleMedium"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:textColor="?attr/colorPrimary" />
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.Cunnis.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_large">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_medium">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnExportData"
+                        style="@style/Widget.Material3.Button.TextButton.Icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="@string/settings_export"
+                        android:gravity="start|center_vertical"
+                        android:textAlignment="textStart"
+                        app:icon="@drawable/ic_export"
+                        app:iconTint="@color/cunnis_control_normal" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?attr/colorOutlineVariant" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnImportData"
+                        style="@style/Widget.Material3.Button.TextButton.Icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="@string/settings_import"
+                        android:gravity="start|center_vertical"
+                        android:textAlignment="textStart"
+                        app:icon="@android:drawable/ic_menu_upload"
+                        app:iconTint="@color/cunnis_control_normal" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- About Section -->
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_about_section"
+                style="@style/TextAppearance.Cunnis.TitleMedium"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:textColor="?attr/colorPrimary" />
+
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.Cunnis.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_large">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_medium">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.Cunnis.HeadlineSmall"
+                        android:text="@string/app_name" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtVersion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.Cunnis.BodyMedium"
+                        android:text="@string/app_version"
+                        android:layout_marginTop="@dimen/margin_small" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtAuthor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.Cunnis.BodyMedium"
+                        android:layout_marginTop="@dimen/margin_small" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?attr/colorOutlineVariant"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:layout_marginBottom="@dimen/margin_medium" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtDedication"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.Cunnis.BodySmall"
+                        android:textStyle="italic"
+                        android:textColor="?attr/colorOnSurfaceVariant" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="?attr/colorOutlineVariant"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:layout_marginBottom="@dimen/margin_medium" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.Cunnis.LabelMedium"
+                        android:text="@string/about_contact"
+                        android:textColor="?attr/colorPrimary" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtTelegram"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.Cunnis.BodySmall"
+                        android:layout_marginTop="@dimen/margin_small" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtContactEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.Cunnis.BodySmall"
+                        android:layout_marginTop="@dimen/margin_small" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

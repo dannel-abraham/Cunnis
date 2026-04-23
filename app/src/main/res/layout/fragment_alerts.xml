@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Check Alerts Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCheckNow"
+            style="@style/Widget.Cunnis.Button.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="@dimen/margin_medium"
+            android:text="@string/alerts_check_now" />
+
+        <!-- Pending alerts result -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardPendingResult"
+            style="@style/Widget.Cunnis.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginEnd="@dimen/margin_medium"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:visibility="gone">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtPendingResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.Cunnis.BodyLarge"
+                android:padding="@dimen/padding_medium" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Alert Configs List -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingStart="@dimen/margin_medium"
+            android:paddingEnd="@dimen/margin_medium" />
+
+        <!-- Empty State -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/alerts_empty"
+            style="@style/TextAppearance.Cunnis.BodyLarge"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:gravity="center"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

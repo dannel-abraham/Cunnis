@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Cunnis</string>
+    <string name="app_version">v0.1.0.0</string>
+    <string name="app_author">Dannel Alvarez Nieto</string>
+    <string name="app_dedication">a mi viejo</string>
+    <string name="app_telegram">\@alvareznieto.dannel</string>
+    <string name="app_email">alvareznieto.dannel@gmail.com</string>
+
+    <string name="nav_home">Inicio</string>
+    <string name="nav_cages">Jaulas</string>
+    <string name="nav_rabbits">Conejos</string>
+    <string name="nav_stats">Estadísticas</string>
+    <string name="nav_settings">Ajustes</string>
+    <string name="nav_alerts">Alertas</string>
+    <string name="nav_expenses">Gastos</string>
+
+    <string name="common_save">Guardar</string>
+    <string name="common_cancel">Cancelar</string>
+    <string name="common_delete">Eliminar</string>
+    <string name="common_edit">Editar</string>
+    <string name="common_add">Agregar</string>
+    <string name="common_confirm">Confirmar</string>
+    <string name="common_back">Atrás</string>
+    <string name="common_yes">Sí</string>
+    <string name="common_no">No</string>
+    <string name="common_search">Buscar</string>
+    <string name="common_filter">Filtrar</string>
+    <string name="common_no_data">Sin datos disponibles</string>
+    <string name="common_loading">Cargando…</string>
+    <string name="common_error">Ocurrió un error</string>
+    <string name="common_success">Operación exitosa</string>
+    <string name="common_close">Cerrar</string>
+    <string name="common_ok">Aceptar</string>
+    <string name="common_na">N/D</string>
+    <string name="common_from">Desde</string>
+    <string name="common_to">Hasta</string>
+    <string name="common_date">Fecha</string>
+    <string name="common_notes">Notas</string>
+    <string name="common_total">Total</string>
+    <string name="common_all">Todos</string>
+
+    <string name="profile_title">Bienvenido a Cunnis</string>
+    <string name="profile_subtitle">Configura tu perfil de granja</string>
+    <string name="profile_username">Nombre de usuario</string>
+    <string name="profile_farm_name">Nombre de la granja</string>
+    <string name="profile_email">Correo electrónico</string>
+    <string name="profile_phone">Teléfono</string>
+    <string name="profile_address">Dirección</string>
+    <string name="profile_username_required">El nombre de usuario es obligatorio</string>
+    <string name="profile_welcome">¡Bienvenido, %s!</string>
+
+    <string name="cage_title">Jaulas</string>
+    <string name="cage_add">Agregar Jaula</string>
+    <string name="cage_edit">Editar Jaula</string>
+    <string name="cage_number">Número de Jaula</string>
+    <string name="cage_number_hint">Ingrese número de jaula</string>
+    <string name="cage_notes">Notas</string>
+    <string name="cage_rabbit_count">%d conejo(s)</string>
+    <string name="cage_empty">Sin conejos en esta jaula</string>
+    <string name="cage_deleted">Jaula eliminada</string>
+    <string name="cage_delete_confirm">¿Eliminar esta jaula? Los conejos quedarán sin asignar.</string>
+    <string name="cage_detail">Jaula #%d</string>
+
+    <string name="rabbit_title">Conejos</string>
+    <string name="rabbit_add">Agregar Conejo</string>
+    <string name="rabbit_edit">Editar Conejo</string>
+    <string name="rabbit_name">Nombre</string>
+    <string name="rabbit_name_required">El nombre es obligatorio</string>
+    <string name="rabbit_identifier">ID</string>
+    <string name="rabbit_gender">Sexo</string>
+    <string name="rabbit_male">Macho</string>
+    <string name="rabbit_female">Hembra</string>
+    <string name="rabbit_breed">Raza</string>
+    <string name="rabbit_breed_hint">Escriba o seleccione la raza</string>
+    <string name="rabbit_birth_date">Fecha de Nacimiento</string>
+    <string name="rabbit_born_in_farm">Nacido en la granja</string>
+    <string name="rabbit_sire">Padre</string>
+    <string name="rabbit_dam">Madre</string>
+    <string name="rabbit_cage">Jaula</string>
+    <string name="rabbit_no_cage">Sin jaula asignada</string>
+    <string name="rabbit_photo">Foto</string>
+    <string name="rabbit_take_photo">Tomar Foto</string>
+    <string name="rabbit_select_photo">Seleccionar de Galería</string>
+    <string name="rabbit_age">Edad</string>
+    <string name="rabbit_weight">Peso</string>
+    <string name="rabbit_status">Estado</string>
+    <string name="rabbit_status_active">Activo</string>
+    <string name="rabbit_status_dead">Fallecido</string>
+    <string name="rabbit_status_sold">Vendido</string>
+    <string name="rabbit_status_slaughtered">Sacrificado</string>
+    <string name="rabbit_notes">Notas</string>
+    <string name="rabbit_deleted">Conejo eliminado</string>
+    <string name="rabbit_delete_confirm">¿Eliminar este conejo? Se perderá todo el historial.</string>
+    <string name="rabbit_detail">Detalle del Conejo</string>
+    <string name="rabbit_days_old">%d días</string>
+    <string name="rabbit_months_old">%d meses</string>
+    <string name="rabbit_unknown_age">Edad desconocida</string>
+    <string name="rabbit_profile">Perfil</string>
+
+    <string name="cemental_title">Macho Reproductor</string>
+    <string name="cemental_no_set">Sin reproductor establecido</string>
+    <string name="cemental_set">Establecer como Reproductor</string>
+    <string name="cemental_info">El macho reproductor es el principal semental de tu granja.</string>
+    <string name="cemental_confirm_change">¿Establecer un nuevo reproductor? Se eliminará el actual.</string>
+
+    <string name="health_title">Historial de Salud</string>
+    <string name="health_add">Agregar Registro de Salud</string>
+    <string name="health_type">Tipo</string>
+    <string name="health_checkup">Revisión</string>
+    <string name="health_vaccination">Vacunación</string>
+    <string name="health_deworming">Desparasitación</string>
+    <string name="health_illness">Enfermedad</string>
+    <string name="health_injury">Lesión</string>
+    <string name="health_surgery">Cirugía</string>
+    <string name="health_veterinarian">Veterinario</string>
+    <string name="health_medication">Medicamento</string>
+    <string name="health_cost">Costo</string>
+    <string name="health_next_due">Próximo Vencimiento</string>
+
+    <string name="weight_title">Historial de Peso</string>
+    <string name="weight_add">Registrar Peso</string>
+    <string name="weight_value">Peso (lb)</string>
+    <string name="weight_hint">Ingrese el peso en libras</string>
+    <string name="weight_avg">Promedio</string>
+    <string name="weight_max">Máximo</string>
+    <string name="weight_current">Actual</string>
+    <string name="weight_lbs">%.1f lb</string>
+
+    <string name="repro_title">Historial Reproductivo</string>
+    <string name="estrus_title">Registros de Celo</string>
+    <string name="estrus_add">Registrar Celo</string>
+    <string name="estrus_date">Fecha de Celo</string>
+    <string name="estrus_observations">Observaciones</string>
+    <string name="estrus_receptive">Receptiva</string>
+    <string name="estrus_next_predicted">Próximo estimado: %s</string>
+    <string name="mating_title">Registros de Monta</string>
+    <string name="mating_add">Registrar Monta</string>
+    <string name="mating_date">Fecha de Monta</string>
+    <string name="mating_buck">Macho</string>
+    <string name="mating_doe">Hembra</string>
+    <string name="mating_effective">Efectiva</string>
+    <string name="mating_result">Resultado</string>
+    <string name="mating_pending">Pendiente</string>
+    <string name="mating_successful">Exitosa</string>
+    <string name="mating_unsuccessful">Fallida</string>
+    <string name="parturition_title">Registros de Parto</string>
+    <string name="parturition_add">Registrar Parto</string>
+    <string name="parturition_date">Fecha de Parto</string>
+    <string name="parturition_due_date">Fecha Estimada</string>
+    <string name="parturition_total_born">Total Nacidos</string>
+    <string name="parturition_born_alive">Nacidos Vivos</string>
+    <string name="parturition_born_dead">Nacidos Muertos</string>
+    <string name="parturition_weaned">Destetados</string>
+    <string name="parturition_est_weaning">Destete Est.</string>
+    <string name="parturition_complications">Complicaciones</string>
+
+    <string name="movement_title">Historial de Movimientos</string>
+    <string name="movement_add">Registrar Movimiento</string>
+    <string name="movement_from">Origen</string>
+    <string name="movement_to">Destino</string>
+    <string name="movement_reason">Motivo</string>
+    <string name="movement_weaning">Destete</string>
+    <string name="movement_breeding">Reproducción</string>
+    <string name="movement_reorganization">Reorganización</string>
+
+    <string name="stats_title">Estadísticas</string>
+    <string name="stats_by_rabbit">Por Conejo</string>
+    <string name="stats_by_cage">Por Jaula</string>
+    <string name="stats_general">General</string>
+    <string name="stats_total_rabbits">Total de Conejos</string>
+    <string name="stats_active_rabbits">Conejos Activos</string>
+    <string name="stats_total_cages">Total de Jaulas</string>
+    <string name="stats_total_born">Total de Nacidos</string>
+    <string name="stats_mortality_rate">Tasa de Mortalidad</string>
+    <string name="stats_avg_litter_size">Promedio de Camada</string>
+    <string name="stats_total_expenses">Gastos Totales</string>
+    <string name="stats_weight_chart">Evolución de Peso</string>
+    <string name="stats_reproduction_chart">Resumen Reproductivo</string>
+
+    <string name="expense_title">Gastos</string>
+    <string name="expense_add">Agregar Gasto</string>
+    <string name="expense_category">Categoría</string>
+    <string name="expense_feed">Alimentación</string>
+    <string name="expense_medicine">Medicina</string>
+    <string name="expense_equipment">Equipamiento</string>
+    <string name="expense_veterinary">Veterinario</string>
+    <string name="expense_transport">Transporte</string>
+    <string name="expense_amount">Monto ($)</string>
+    <string name="expense_description">Descripción</string>
+    <string name="expense_deleted">Gasto eliminado</string>
+
+    <string name="feeding_title">Registros de Alimentación</string>
+    <string name="feeding_add">Agregar Registro</string>
+    <string name="feeding_type">Tipo de Alimento</string>
+    <string name="feeding_quantity">Cantidad (lb)</string>
+    <string name="feeding_cage">Jaula</string>
+
+    <string name="alert_title">Alertas</string>
+    <string name="alert_config_title">Configuración de Alertas</string>
+    <string name="alert_estrus">Predicción de Celo</string>
+    <string name="alert_gestation">Fecha de Parto</string>
+    <string name="alert_weaning">Fecha de Destete</string>
+    <string name="alert_reproductive_age">Edad Reproductiva</string>
+    <string name="alert_weight_check">Control Mensual de Peso</string>
+    <string name="alert_vaccination">Vencimiento de Vacunación</string>
+    <string name="alert_advance_days">Días de anticipación</string>
+    <string name="alert_advance_hours">Horas de anticipación</string>
+    <string name="alert_enabled">Activada</string>
+    <string name="alert_disabled">Desactivada</string>
+
+    <string name="export_title">Exportar / Importar</string>
+    <string name="export_db">Exportar Base de Datos</string>
+    <string name="import_db">Importar Base de Datos</string>
+    <string name="export_success">Base de datos exportada exitosamente</string>
+    <string name="import_success">Base de datos importada exitosamente</string>
+    <string name="import_confirm">Importar una base de datos reemplazará todos los datos actuales. ¿Está seguro?</string>
+    <string name="import_error">Error al importar la base de datos</string>
+    <string name="export_format">Copia de Seguridad Cunnis (.cbckp)</string>
+
+    <string name="settings_title">Ajustes</string>
+    <string name="settings_profile">Perfil de la Granja</string>
+    <string name="settings_theme">Tema</string>
+    <string name="settings_language">Idioma</string>
+    <string name="settings_notifications">Notificaciones</string>
+    <string name="settings_alert_config">Configuración de Alertas</string>
+    <string name="settings_export">Exportar Datos</string>
+    <string name="settings_import">Importar Datos</string>
+    <string name="settings_about">Acerca de</string>
+    <string name="settings_theme_light">Claro</string>
+    <string name="settings_theme_dark">Oscuro</string>
+    <string name="settings_theme_system">Sistema</string>
+
+    <string name="home_welcome">Bienvenido a tu granja</string>
+    <string name="home_total">Total</string>
+    <string name="home_males">Machos</string>
+    <string name="home_females">Hembras</string>
+    <string name="home_cages">Jaulas</string>
+    <string name="home_recent_alerts">Alertas Recientes</string>
+    <string name="home_quick_actions">Acciones Rápidas</string>
+    <string name="home_add_rabbit">Agregar Conejo</string>
+    <string name="home_add_cage">Agregar Jaula</string>
+    <string name="home_record_mating">Registrar Monta</string>
+    <string name="home_add_expense">Agregar Gasto</string>
+
+    <string name="exit_title">Registrar Salida</string>
+    <string name="exit_reason">Motivo de Salida</string>
+    <string name="exit_date">Fecha de Salida</string>
+    <string name="exit_notes">Notas de Salida</string>
+    <string name="exit_natural_death">Muerte Natural</string>
+    <string name="exit_disease">Enfermedad</string>
+    <string name="exit_sold">Vendido</string>
+    <string name="exit_slaughtered">Sacrificado</string>
+    <string name="exit_accident">Accidente</string>
+
+    <string name="about_title">Acerca de Cunnis</string>
+    <string name="about_description">Suite profesional de gestión de granja cuncícola</string>
+    <string name="about_version">Versión: %s</string>
+    <string name="about_author">Autor: %s</string>
+    <string name="about_contact">Contacto</string>
+
+    <string name="drawer_open">Abrir menú de navegación</string>
+    <string name="drawer_close">Cerrar menú de navegación</string>
+    <string name="drawer_header_subtitle">Gestor de Granja Cuncícola</string>
+
+    <string name="error_required_field">Este campo es obligatorio</string>
+    <string name="error_invalid_data">Datos inválidos</string>
+    <string name="error_camera">No se pudo acceder a la cámara</string>
+    <string name="error_storage">Permiso de almacenamiento denegado</string>
+    <string name="error_generic">Algo salió mal</string>
+
+    <!-- Estrus (missing) -->
+    <string name="estrus_not_receptive">No Receptiva</string>
+    <string name="estrus_empty">Sin registros de celo</string>
+    <string name="estrus_delete_confirm">¿Eliminar este registro de celo?</string>
+    <string name="estrus_deleted">Registro de celo eliminado</string>
+    <string name="estrus_saved">Registro de celo guardado</string>
+
+    <!-- Mating (missing) -->
+    <string name="mating_empty">Sin registros de monta</string>
+    <string name="mating_due_date">Fecha estimada: %s</string>
+
+    <!-- Parturition (missing) -->
+    <string name="parturition_empty">Sin registros de parto</string>
+
+    <!-- Enhanced Stats (missing) -->
+    <string name="stats_weight_evolution">Evolución de Peso</string>
+    <string name="stats_reproduction_overview">Resumen Reproductivo</string>
+    <string name="stats_expense_breakdown">Desglose de Gastos</string>
+    <string name="stats_breed_distribution">Distribución de Razas</string>
+    <string name="stats_month">Mes</string>
+    <string name="stats_alive">Nacidos Vivos</string>
+    <string name="stats_dead">Nacidos Muertos</string>
+    <string name="stats_no_chart_data">Sin datos disponibles para la gráfica</string>
+    <string name="stats_rabbit_title">Estadísticas del Conejo</string>
+    <string name="stats_age">Edad</string>
+    <string name="stats_matings">Montas</string>
+    <string name="stats_parturitions">Partos</string>
+
+    <!-- Feeding (missing) -->
+    <string name="feeding_list_title">Registros de Alimentación</string>
+    <string name="feeding_list_empty">Sin registros de alimentación</string>
+    <string name="feeding_this_month">Este Mes</string>
+    <string name="feeding_total_quantity">Cantidad Total</string>
+    <string name="feeding_lbs_month">%.1f lb este mes</string>
+    <string name="feeding_filter_all">Todos</string>
+
+    <!-- Home (missing) -->
+    <string name="home_select_doe">Seleccionar una Hembra</string>
+    <string name="home_no_females">No hay hembras activas disponibles</string>
+    <string name="home_mating_for">Registrar monta para: %s</string>
+
+    <!-- Health Event Activity (missing) -->
+    <string name="health_event_title">Agregar Evento de Salud</string>
+    <string name="health_event_edit_title">Editar Evento de Salud</string>
+    <string name="health_event_type_required">El tipo de evento es obligatorio</string>
+    <string name="health_event_saved">Evento de salud guardado</string>
+    <string name="health_title_label">Título</string>
+    <string name="health_description_label">Descripción</string>
+    <string name="health_veterinarian_label">Veterinario</string>
+    <string name="health_medication_label">Medicamento</string>
+    <string name="health_cost_label">Costo ($)</string>
+    <string name="health_next_due_label">Próxima Fecha de Vencimiento</string>
+
+    <!-- Mating Record Activity (missing) -->
+    <string name="mating_record_title">Registrar Monta</string>
+    <string name="mating_select_buck">Seleccionar Macho</string>
+    <string name="mating_date_label">Fecha de Monta</string>
+    <string name="mating_effective_label">Efectiva</string>
+    <string name="mating_attempt_label">Número de Intento</string>
+    <string name="mating_observations_label">Observaciones</string>
+    <string name="mating_saved">Registro de monta guardado</string>
+
+    <!-- Parturition Activity (missing) -->
+    <string name="parturition_record_title">Registrar Parto</string>
+    <string name="parturition_select_buck">Seleccionar Macho</string>
+    <string name="parturition_estimated_due">Fecha Estimada de Parto</string>
+    <string name="parturition_total_born_hint">Total nacidos</string>
+    <string name="parturition_born_alive_hint">Nacidos vivos</string>
+    <string name="parturition_born_dead_hint">Nacidos muertos</string>
+    <string name="parturition_weaned_hint">Destetados</string>
+    <string name="parturition_complications_label">Complicaciones</string>
+    <string name="parturition_complications_notes_label">Notas de Complicaciones</string>
+    <string name="parturition_saved">Registro de parto guardado</string>
+
+    <!-- Weight Record Activity (missing) -->
+    <string name="weight_record_title">Registrar Peso</string>
+    <string name="weight_latest_label">Último Peso</string>
+    <string name="weight_avg_label">Peso Promedio</string>
+    <string name="weight_required">El peso es obligatorio</string>
+    <string name="weight_saved">Registro de peso guardado</string>
+
+    <!-- Expense Activity (missing) -->
+    <string name="add_expense_title">Agregar Gasto</string>
+    <string name="expense_description_required">La descripción es obligatoria</string>
+    <string name="expense_amount_required">El monto es obligatorio</string>
+    <string name="expense_saved">Gasto guardado</string>
+    <string name="expense_select_rabbit">Seleccionar Conejo (opcional)</string>
+    <string name="expense_select_cage">Seleccionar Jaula (opcional)</string>
+
+    <!-- Feeding Activity (missing) -->
+    <string name="add_feeding_title">Registrar Alimentación</string>
+    <string name="feeding_feed_type_required">El tipo de alimento es obligatorio</string>
+    <string name="feeding_quantity_required">La cantidad es obligatoria</string>
+    <string name="feeding_select_cage">Seleccionar Jaula</string>
+    <string name="feeding_saved">Registro de alimentación guardado</string>
+
+    <!-- Export/Import Activity (missing) -->
+    <string name="export_import_title">Exportar / Importar</string>
+    <string name="export_database_desc">Crear una copia de seguridad de toda la base de datos</string>
+    <string name="import_database_desc">Restaurar desde un archivo de copia de seguridad anterior</string>
+    <string name="export_db_stats">Estadísticas de la Base de Datos</string>
+    <string name="export_total_records">%d registros</string>
+    <string name="export_in_progress">Exportando base de datos…</string>
+    <string name="import_in_progress">Importando base de datos…</string>
+
+    <!-- Notifications (missing) -->
+    <string name="notification_channel_alerts">Alertas de Granja</string>
+    <string name="notification_channel_alerts_desc">Alertas para tu granja cuncícola</string>
+    <string name="alert_notification_title">Alerta de Granja</string>
+
+    <!-- Settings (missing) -->
+    <string name="settings_profile_section">Perfil de la Granja</string>
+    <string name="settings_edit_profile">Editar Perfil</string>
+    <string name="settings_appearance">Apariencia</string>
+    <string name="settings_language_section">Idioma</string>
+    <string name="settings_lang_en">English</string>
+    <string name="settings_lang_es">Español</string>
+    <string name="settings_lang_ru">Русский</string>
+    <string name="settings_notifications_section">Notificaciones</string>
+    <string name="settings_data_section">Gestión de Datos</string>
+    <string name="settings_about_section">Acerca de</string>
+    <string name="settings_dedication">%s</string>
+    <string name="settings_theme_applied">Tema cambiado</string>
+    <string name="settings_language_applied">Idioma cambiado (puede ser necesario reiniciar)</string>
+
+    <!-- Cage Detail (missing) -->
+    <string name="cage_detail_title">Jaula #%d</string>
+    <string name="cage_detail_rabbits">Conejos en la Jaula</string>
+    <string name="cage_detail_add_rabbit">Agregar Conejo</string>
+    <string name="cage_detail_no_rabbits">Sin conejos en esta jaula</string>
+
+    <!-- Cemental (missing) -->
+    <string name="cemental_current">Macho Reproductor Actual</string>
+    <string name="cemental_set_new">Establecer Nuevo Reproductor</string>
+    <string name="cemental_remove">Eliminar Reproductor</string>
+    <string name="cemental_stats">Estadísticas del Reproductor</string>
+    <string name="cemental_total_matings">Total de Montas</string>
+    <string name="cemental_successful_matings">Montas Exitosas</string>
+    <string name="cemental_total_offspring">Total de Cría</string>
+    <string name="cemental_recent_matings">Montas Recientes</string>
+    <string name="cemental_select_male">Seleccionar un Conejo Macho</string>
+    <string name="cemental_removed">Reproductor eliminado</string>
+    <string name="cemental_no_male">No hay machos activos disponibles</string>
+
+    <!-- Expenses List (missing) -->
+    <string name="expenses_empty">Sin gastos registrados</string>
+    <string name="expenses_filter_all">Todos</string>
+    <string name="expenses_total_label">Total de Gastos</string>
+
+    <!-- Alerts (missing) -->
+    <string name="alerts_empty">Sin configuraciones de alerta</string>
+    <string name="alerts_check_now">Verificar Alertas Ahora</string>
+    <string name="alerts_no_pending">Sin alertas pendientes</string>
+    <string name="alerts_pending_count">%d alerta(s) pendiente(s)</string>
+    <string name="alerts_estrus_prediction_desc">Notifica cuando una hembra se acerca a su próximo ciclo de celo</string>
+    <string name="alerts_gestation_due_desc">Notifica cuando un período de gestación se acerca a la fecha de parto</string>
+    <string name="alerts_weaning_desc">Notifica cuando los gazapos están listos para ser destetados</string>
+    <string name="alerts_reproductive_age_desc">Notifica cuando los conejos alcanzan la madurez reproductiva</string>
+    <string name="alerts_weight_check_desc">Recordatorio mensual para registrar el peso de los conejos</string>
+    <string name="alerts_vaccination_due_desc">Notifica cuando se acerca la fecha de una vacunación</string>
+
+    <!-- Exit Dialog -->
+    <string name="exit_confirm">¿Registrar esta salida? El conejo será marcado como inactivo.</string>
+    <string name="exit_recorded">Salida registrada exitosamente</string>
+    <string name="exit_select_reason">Seleccionar motivo</string>
+
+    <!-- Transfer Dialog -->
+    <string name="transfer_current_cage">Jaula Actual</string>
+    <string name="transfer_target_cage">Jaula Destino</string>
+    <string name="transfer_select_cage">Seleccionar jaula destino</string>
+    <string name="transfer_reason">Motivo</string>
+    <string name="transfer_select_reason">Seleccionar motivo</string>
+    <string name="transfer_confirm">¿Transferir este conejo a la jaula #%d?</string>
+    <string name="transfer_success">Conejo transferido exitosamente</string>
+    <string name="transfer_no_cages">No hay otras jaulas disponibles</string>
+
+    <!-- Parent Tracking -->
+    <string name="rabbit_sire_placeholder">Seleccionar Padre</string>
+    <string name="rabbit_dam_placeholder">Seleccionar Madre</string>
+    <string name="rabbit_parent_format">%s (%s)</string>
+
+    <!-- Weight History Chart -->
+    <string name="filter_show">Mostrar Filtros</string>
+    <string name="filter_hide">Ocultar Filtros</string>
+    <string name="filter_all">Todos</string>
+    <string name="filter_gender">Sexo</string>
+    <string name="filter_breed">Raza</string>
+    <string name="filter_cage">Jaula</string>
+    <string name="filter_no_results">Ningún conejo coincide con los filtros actuales</string>
+    <string name="weight_chart_title">Evolución de Peso</string>
+    <string name="weight_stats_latest">Último</string>
+    <string name="weight_stats_avg">Promedio</string>
+    <string name="weight_stats_max">Máximo</string>
+
+    <!-- Home Pending Alerts -->
+    <string name="home_pending_alerts">Alertas Pendientes</string>
+    <string name="home_view_all_alerts">Ver Todo</string>
+    <string name="home_no_pending_alerts">Sin alertas pendientes</string>
+
+    <!-- Alert Check Progress -->
+    <string name="alert_checking">Verificando alertas…</string>
+    <string name="alert_notifications_sent">%d notificación(es) enviada(s)</string>
+    <string name="alert_check_complete">Verificación de alertas completa</string>
+
+    <!-- Weight Photo -->
+    <string name="weight_photo">Agregar Foto</string>
+    <string name="weight_take_photo">Tomar Foto</string>
+    <string name="weight_select_gallery">Seleccionar de Galería</string>
+
+    <!-- Import Restart -->
+    <string name="import_restart_required">Base de datos importada. Reinicie la aplicación para que los cambios surtan efecto.</string>
+    <string name="import_restart">Reiniciar</string>
+
+    <!-- Rabbit Birth Date -->
+    <string name="rabbit_birth_date_hint">Seleccionar fecha</string>
+
+    <!-- Sale Price & Parent Labels -->
+    <string name="exit_sale_price">Precio de Venta ($)</string>
+    <string name="rabbit_sire_label">Padre (Semental)</string>
+    <string name="rabbit_dam_label">Madre (Hembra)</string>
+    <string name="rabbit_unknown_parent">Desconocido</string>
+
+    <!-- Category display names -->
+    <string name="category_other">Otro</string>
+    <string name="category_feed">Alimentación</string>
+    <string name="category_medicine">Medicina</string>
+    <string name="category_equipment">Equipamiento</string>
+    <string name="category_veterinary">Veterinario</string>
+    <string name="category_transport">Transporte</string>
+
+    <!-- Chart labels -->
+    <string name="chart_weight_lb">Peso (lb)</string>
+    <string name="chart_average_weight">Promedio</string>
+    <string name="chart_avg_weight_lb">Peso Promedio (lb)</string>
+
+    <!-- Alert notification messages -->
+    <string name="alert_estrus_msg">Celo previsto para %1$s (esperado: %2$s)</string>
+    <string name="alert_gestation_msg">Parto previsto para %1$s (esperado: %2$s)</string>
+    <string name="alert_weaning_msg">Gazapos listos para destete de %1$s (desde: %2$s)</string>
+    <string name="alert_weight_msg">Control mensual de peso pendiente para %1$s (último: %2$s)</string>
+    <string name="alert_reproductive_msg">%1$s ha alcanzado la madurez reproductiva</string>
+    <string name="alert_vaccination_msg">Vacunación pendiente para %1$s — %2$s</string>
+    <string name="alert_unknown_rabbit">Conejo desconocido</string>
+    <string name="alert_unknown_doe">Hembra desconocida</string>
+
+    <!-- Misc -->
+    <string name="cage_format">Jaula #%d</string>
+    <string name="weight_photo_note">Peso: </string>
+    <string name="alert_type_unknown">Desconocido</string>
+</resources>

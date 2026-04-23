@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_medium">
+
+            <!-- Current Buck Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardCemental"
+                style="@style/Widget.Cunnis.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/padding_medium">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imgCemental"
+                        android:layout_width="@dimen/rabbit_photo_size_large"
+                        android:layout_height="@dimen/rabbit_photo_size_large"
+                        android:src="@android:drawable/ic_menu_gallery"
+                        app:civ_border_width="3dp"
+                        app:civ_border_color="@color/cunnis_cemental" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="@dimen/margin_medium">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txtCementalName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.Cunnis.TitleLarge" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txtCementalIdentifier"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.Cunnis.BodyMedium"
+                            android:textColor="?attr/colorOnSurfaceVariant"
+                            android:layout_marginTop="2dp" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chipBreed"
+                            style="@style/Widget.Cunnis.Chip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="4dp"
+                            android:visibility="gone" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txtCementalAge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.Cunnis.BodySmall"
+                            android:textColor="?attr/colorOnSurfaceVariant"
+                            android:layout_marginTop="4dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Empty State -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardEmpty"
+                style="@style/Widget.Cunnis.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_large">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@android:drawable/ic_menu_myplaces"
+                        app:tint="?attr/colorOnSurfaceVariant"
+                        android:alpha="0.5" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cemental_no_set"
+                        style="@style/TextAppearance.Cunnis.BodyLarge"
+                        android:textColor="?attr/colorOnSurfaceVariant"
+                        android:layout_marginTop="@dimen/margin_medium" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Action Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/margin_medium">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSetNew"
+                    style="@style/Widget.Cunnis.Button.Primary"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="@string/cemental_set_new"
+                    android:layout_marginEnd="@dimen/margin_small" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnRemove"
+                    style="@style/Widget.Cunnis.Button.Outline"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="@string/cemental_remove"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <!-- Stats Section -->
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cemental_stats"
+                style="@style/TextAppearance.Cunnis.TitleMedium"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:textColor="?attr/colorPrimary" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardStats"
+                style="@style/Widget.Cunnis.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_medium">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txtTotalMatings"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.Cunnis.HeadlineMedium"
+                            android:textColor="@color/cunnis_control_normal"
+                            android:text="0" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.Cunnis.LabelSmall"
+                            android:text="@string/cemental_total_matings"
+                            android:textColor="?attr/colorOnSurfaceVariant" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txtSuccessfulMatings"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.Cunnis.HeadlineMedium"
+                            android:textColor="@color/cunnis_success"
+                            android:text="0" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.Cunnis.LabelSmall"
+                            android:text="@string/cemental_successful_matings"
+                            android:textColor="?attr/colorOnSurfaceVariant" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txtTotalOffspring"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.Cunnis.HeadlineMedium"
+                            android:textColor="@color/cunnis_accent"
+                            android:text="0" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/TextAppearance.Cunnis.LabelSmall"
+                            android:text="@string/cemental_total_offspring"
+                            android:textColor="?attr/colorOnSurfaceVariant" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Recent Matings -->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtRecentTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cemental_recent_matings"
+                style="@style/TextAppearance.Cunnis.TitleMedium"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:textColor="?attr/colorPrimary"
+                android:visibility="gone" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardRecentMatings"
+                style="@style/Widget.Cunnis.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_large"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/layoutMatings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

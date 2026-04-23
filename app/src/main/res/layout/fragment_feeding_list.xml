@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Summary Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardSummary"
+            style="@style/Widget.Cunnis.Card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            app:cardBackgroundColor="@color/cunnis_control_normal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="@dimen/padding_medium">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.Cunnis.BodyMedium"
+                        android:text="@string/feeding_this_month"
+                        android:textColor="#B0FFFFFF" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtMonthCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.Cunnis.HeadlineLarge"
+                        android:textColor="@color/cunnis_white"
+                        android:text="0" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="48dp"
+                    android:background="#33FFFFFF" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.Cunnis.BodyMedium"
+                        android:text="@string/feeding_total_quantity"
+                        android:textColor="#B0FFFFFF" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txtMonthQuantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.Cunnis.HeadlineLarge"
+                        android:textColor="@color/cunnis_white"
+                        android:text="0 lb" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Filter Chips (cages) -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupFilter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="@dimen/margin_medium"
+                android:paddingEnd="@dimen/margin_medium"
+                android:paddingBottom="@dimen/margin_small"
+                app:singleLine="true"
+                app:singleSelection="true">
+
+                <!-- Dynamically populated: "All" chip + one chip per cage -->
+
+            </com.google.android.material.chip.ChipGroup>
+
+        </HorizontalScrollView>
+
+        <!-- Feeding Records List -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingStart="@dimen/margin_medium"
+            android:paddingEnd="@dimen/margin_medium" />
+
+        <!-- Empty State -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/feeding_list_empty"
+            style="@style/TextAppearance.Cunnis.BodyLarge"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:gravity="center"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAdd"
+        style="@style/Widget.Cunnis.FloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_input_add"
+        android:contentDescription="@string/feeding_add" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

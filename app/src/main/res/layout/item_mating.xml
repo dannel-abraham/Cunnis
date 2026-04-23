@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.Cunnis.Card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_small"
+    app:cardCornerRadius="@dimen/card_corner_radius"
+    app:cardElevation="@dimen/card_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_medium">
+
+        <!-- Top row: date, result chip, attempt -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/TextAppearance.Cunnis.TitleMedium" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipResult"
+                style="@style/Widget.Cunnis.Chip"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginStart="@dimen/margin_small" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtAttempt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_medium"
+                style="@style/TextAppearance.Cunnis.LabelSmall"
+                android:textColor="?attr/colorOnSurfaceVariant" />
+
+        </LinearLayout>
+
+        <!-- Buck name -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtBuck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            style="@style/TextAppearance.Cunnis.BodyMedium"
+            android:drawablePadding="@dimen/margin_small"
+            android:drawableStart="@android:drawable/ic_menu_myplaces"
+            android:textColor="?attr/colorOnSurfaceVariant" />
+
+        <!-- Gestation due date -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtDueDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            style="@style/TextAppearance.Cunnis.BodySmall"
+            android:textColor="?attr/colorPrimary"
+            android:visibility="gone" />
+
+        <!-- Observations -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtObservations"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            style="@style/TextAppearance.Cunnis.BodySmall"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_back"
+            app:title="@string/rabbit_add"
+            app:titleTextColor="?attr/colorOnSurface" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_large">
+
+            <!-- Photo -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/margin_medium">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="@dimen/rabbit_photo_size_large"
+                    android:layout_height="@dimen/rabbit_photo_size_large"
+                    app:cardCornerRadius="80dp"
+                    app:cardElevation="2dp">
+
+                    <ImageView
+                        android:id="@+id/imgPhoto"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@android:drawable/ic_menu_camera"
+                        android:scaleType="centerCrop" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPhoto"
+                style="@style/Widget.Cunnis.Button.Outline"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/rabbit_take_photo"
+                android:textSize="13sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/margin_medium" />
+
+            <!-- Name -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilName"
+                style="@style/Widget.Cunnis.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/rabbit_name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Identifier (read-only) -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilIdentifier"
+                style="@style/Widget.Cunnis.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/rabbit_identifier"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtIdentifier"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:focusable="false"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Gender -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilGender"
+                style="@style/Widget.Cunnis.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/rabbit_gender"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <AutoCompleteTextView
+                    android:id="@+id/actGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Breed -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilBreed"
+                style="@style/Widget.Cunnis.TextInputLayout.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/rabbit_breed"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <AutoCompleteTextView
+                    android:id="@+id/actBreed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Birth Date -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/chkBornInFarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rabbit_born_in_farm" />
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilBirthDate"
+                style="@style/Widget.Cunnis.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/rabbit_birth_date"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtBirthDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"
+                    android:focusable="false"
+                    android:maxLines="1" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Sire & Dam (visible only when born in farm) -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilSire"
+                style="@style/Widget.Cunnis.TextInputLayout.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/rabbit_sire"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:visibility="gone">
+
+                <AutoCompleteTextView
+                    android:id="@+id/actSire"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilDam"
+                style="@style/Widget.Cunnis.TextInputLayout.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/rabbit_dam"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:visibility="gone">
+
+                <AutoCompleteTextView
+                    android:id="@+id/actDam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Cage -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilCage"
+                style="@style/Widget.Cunnis.TextInputLayout.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/rabbit_cage"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <AutoCompleteTextView
+                    android:id="@+id/actCage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Notes -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilNotes"
+                style="@style/Widget.Cunnis.TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/rabbit_notes"
+                android:layout_marginTop="@dimen/margin_medium">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtNotes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:minLines="2"
+                    android:gravity="top" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Save Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSave"
+                style="@style/Widget.Cunnis.Button.Primary"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="@string/common_save"
+                android:layout_marginTop="@dimen/margin_xlarge" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
